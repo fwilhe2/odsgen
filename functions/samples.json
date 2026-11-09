@@ -4079,22 +4079,130 @@
       },
       {
        "kind": "string",
+       "value": "COM.MICROSOFT.MAXIFS",
+       "shown": "COM.MICROSOFT.MAXIFS",
+       "ref": "A9"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.MAXIFS(Marks.C2:C11;Marks.B2:B11;\"7B\")",
+       "shown": "=COM.MICROSOFT.MAXIFS(Marks.C2:C11;Marks.B2:B11;\"7B\")",
+       "ref": "B9"
+      },
+      {
+       "kind": "float",
+       "value": "91",
+       "shown": "91",
+       "formula": "=COM.MICROSOFT.MAXIFS([Marks.C2:.C11];[Marks.B2:.B11];\"7B\")",
+       "ref": "C9",
+       "odf": "COM.MICROSOFT.MAXIFS([Marks.C2:.C11];[Marks.B2:.B11];\"7B\")",
+       "excel": "_xlfn.MAXIFS(Marks!C2:C11,Marks!B2:B11,\"7B\")"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's MAXIFS: the best maths mark in 7B",
+       "shown": "Excel's MAXIFS: the best maths mark in 7B",
+       "ref": "D9"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.MAXIFS",
+       "shown": "COM.MICROSOFT.MAXIFS",
+       "ref": "A10"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.MAXIFS(Marks.D2:D11;Marks.B2:B11;\"7B\";Marks.E2:E11;\"<80\")",
+       "shown": "=COM.MICROSOFT.MAXIFS(Marks.D2:D11;Marks.B2:B11;\"7B\";Marks.E2:E11;\"<80\")",
+       "ref": "B10"
+      },
+      {
+       "kind": "float",
+       "value": "68",
+       "shown": "68",
+       "formula": "=COM.MICROSOFT.MAXIFS([Marks.D2:.D11];[Marks.B2:.B11];\"7B\";[Marks.E2:.E11];\"<80\")",
+       "ref": "C10",
+       "odf": "COM.MICROSOFT.MAXIFS([Marks.D2:.D11];[Marks.B2:.B11];\"7B\";[Marks.E2:.E11];\"<80\")",
+       "excel": "_xlfn.MAXIFS(Marks!D2:D11,Marks!B2:B11,\"7B\",Marks!E2:E11,\"<80\")"
+      },
+      {
+       "kind": "string",
+       "value": "Best English mark in 7B among science marks under 80: the note is skipped",
+       "shown": "Best English mark in 7B among science marks under 80: the note is skipped",
+       "ref": "D10"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.MINIFS",
+       "shown": "COM.MICROSOFT.MINIFS",
+       "ref": "A11"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.MINIFS(Marks.E2:E11;Marks.B2:B11;\"7A\")",
+       "shown": "=COM.MICROSOFT.MINIFS(Marks.E2:E11;Marks.B2:B11;\"7A\")",
+       "ref": "B11"
+      },
+      {
+       "kind": "float",
+       "value": "70",
+       "shown": "70",
+       "formula": "=COM.MICROSOFT.MINIFS([Marks.E2:.E11];[Marks.B2:.B11];\"7A\")",
+       "ref": "C11",
+       "odf": "COM.MICROSOFT.MINIFS([Marks.E2:.E11];[Marks.B2:.B11];\"7A\")",
+       "excel": "_xlfn.MINIFS(Marks!E2:E11,Marks!B2:B11,\"7A\")"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's MINIFS: the lowest science mark in 7A",
+       "shown": "Excel's MINIFS: the lowest science mark in 7A",
+       "ref": "D11"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.MINIFS",
+       "shown": "COM.MICROSOFT.MINIFS",
+       "ref": "A12"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.MINIFS(Marks.C2:C11;Marks.B2:B11;\"8A\")",
+       "shown": "=COM.MICROSOFT.MINIFS(Marks.C2:C11;Marks.B2:B11;\"8A\")",
+       "ref": "B12"
+      },
+      {
+       "kind": "float",
+       "value": "0",
+       "shown": "0",
+       "formula": "=COM.MICROSOFT.MINIFS([Marks.C2:.C11];[Marks.B2:.B11];\"8A\")",
+       "ref": "C12",
+       "odf": "COM.MICROSOFT.MINIFS([Marks.C2:.C11];[Marks.B2:.B11];\"8A\")",
+       "excel": "_xlfn.MINIFS(Marks!C2:C11,Marks!B2:B11,\"8A\")"
+      },
+      {
+       "kind": "string",
+       "value": "There is no class 8A: nothing matches, and the answer is 0",
+       "shown": "There is no class 8A: nothing matches, and the answer is 0",
+       "ref": "D12"
+      },
+      {
+       "kind": "string",
        "value": "LARGE",
        "shown": "LARGE",
-       "ref": "A9"
+       "ref": "A13"
       },
       {
        "kind": "string",
        "value": "=LARGE(Marks.C2:C11;3)",
        "shown": "=LARGE(Marks.C2:C11;3)",
-       "ref": "B9"
+       "ref": "B13"
       },
       {
        "kind": "float",
        "value": "88",
        "shown": "88",
        "formula": "=LARGE([Marks.C2:.C11];3)",
-       "ref": "C9",
+       "ref": "C13",
        "odf": "LARGE([Marks.C2:.C11];3)",
        "excel": "LARGE(Marks!C2:C11,3)"
       },
@@ -4102,26 +4210,26 @@
        "kind": "string",
        "value": "Third-best maths mark",
        "shown": "Third-best maths mark",
-       "ref": "D9"
+       "ref": "D13"
       },
       {
        "kind": "string",
        "value": "SMALL",
        "shown": "SMALL",
-       "ref": "A10"
+       "ref": "A14"
       },
       {
        "kind": "string",
        "value": "=SMALL(Marks.E2:E11;2)",
        "shown": "=SMALL(Marks.E2:E11;2)",
-       "ref": "B10"
+       "ref": "B14"
       },
       {
        "kind": "float",
        "value": "59",
        "shown": "59",
        "formula": "=SMALL([Marks.E2:.E11];2)",
-       "ref": "C10",
+       "ref": "C14",
        "odf": "SMALL([Marks.E2:.E11];2)",
        "excel": "SMALL(Marks!E2:E11,2)"
       },
@@ -4129,26 +4237,26 @@
        "kind": "string",
        "value": "Second-lowest science mark",
        "shown": "Second-lowest science mark",
-       "ref": "D10"
+       "ref": "D14"
       },
       {
        "kind": "string",
        "value": "MEDIAN",
        "shown": "MEDIAN",
-       "ref": "A11"
+       "ref": "A15"
       },
       {
        "kind": "string",
        "value": "=MEDIAN(Marks.C2:C11)",
        "shown": "=MEDIAN(Marks.C2:C11)",
-       "ref": "B11"
+       "ref": "B15"
       },
       {
        "kind": "float",
        "value": "75",
        "shown": "75",
        "formula": "=MEDIAN([Marks.C2:.C11])",
-       "ref": "C11",
+       "ref": "C15",
        "odf": "MEDIAN([Marks.C2:.C11])",
        "excel": "MEDIAN(Marks!C2:C11)"
       },
@@ -4156,26 +4264,26 @@
        "kind": "string",
        "value": "The middle maths mark",
        "shown": "The middle maths mark",
-       "ref": "D11"
+       "ref": "D15"
       },
       {
        "kind": "string",
        "value": "RANK",
        "shown": "RANK",
-       "ref": "A12"
+       "ref": "A16"
       },
       {
        "kind": "string",
        "value": "=RANK(Marks.C4;Marks.C2:C11)",
        "shown": "=RANK(Marks.C4;Marks.C2:C11)",
-       "ref": "B12"
+       "ref": "B16"
       },
       {
        "kind": "float",
        "value": "2",
        "shown": "2",
        "formula": "=RANK([Marks.C4];[Marks.C2:.C11])",
-       "ref": "C12",
+       "ref": "C16",
        "odf": "RANK([Marks.C4];[Marks.C2:.C11])",
        "excel": "RANK(Marks!C4,Marks!C2:C11)"
       },
@@ -4183,26 +4291,26 @@
        "kind": "string",
        "value": "Chloe's place in maths, best first",
        "shown": "Chloe's place in maths, best first",
-       "ref": "D12"
+       "ref": "D16"
       },
       {
        "kind": "string",
        "value": "RANK",
        "shown": "RANK",
-       "ref": "A13"
+       "ref": "A17"
       },
       {
        "kind": "string",
        "value": "=RANK(Marks.C9;Marks.C2:C11;1)",
        "shown": "=RANK(Marks.C9;Marks.C2:C11;1)",
-       "ref": "B13"
+       "ref": "B17"
       },
       {
        "kind": "float",
        "value": "1",
        "shown": "1",
        "formula": "=RANK([Marks.C9];[Marks.C2:.C11];1)",
-       "ref": "C13",
+       "ref": "C17",
        "odf": "RANK([Marks.C9];[Marks.C2:.C11];1)",
        "excel": "RANK(Marks!C9,Marks!C2:C11,1)"
       },
@@ -4210,26 +4318,26 @@
        "kind": "string",
        "value": "Hugo's place in maths, counted from the bottom",
        "shown": "Hugo's place in maths, counted from the bottom",
-       "ref": "D13"
+       "ref": "D17"
       },
       {
        "kind": "string",
        "value": "STDEV",
        "shown": "STDEV",
-       "ref": "A14"
+       "ref": "A18"
       },
       {
        "kind": "string",
        "value": "=STDEV(Marks.C2:C11)",
        "shown": "=STDEV(Marks.C2:C11)",
-       "ref": "B14"
+       "ref": "B18"
       },
       {
        "kind": "float",
        "value": "15.7483685222029",
        "shown": "15.7483685222029",
        "formula": "=STDEV([Marks.C2:.C11])",
-       "ref": "C14",
+       "ref": "C18",
        "odf": "STDEV([Marks.C2:.C11])",
        "excel": "STDEV(Marks!C2:C11)"
       },
@@ -4237,26 +4345,26 @@
        "kind": "string",
        "value": "Spread of the maths marks, as a sample",
        "shown": "Spread of the maths marks, as a sample",
-       "ref": "D14"
+       "ref": "D18"
       },
       {
        "kind": "string",
        "value": "STDEVP",
        "shown": "STDEVP",
-       "ref": "A15"
+       "ref": "A19"
       },
       {
        "kind": "string",
        "value": "=STDEVP(Marks.C2:C11)",
        "shown": "=STDEVP(Marks.C2:C11)",
-       "ref": "B15"
+       "ref": "B19"
       },
       {
        "kind": "float",
        "value": "14.9402141885583",
        "shown": "14.9402141885583",
        "formula": "=STDEVP([Marks.C2:.C11])",
-       "ref": "C15",
+       "ref": "C19",
        "odf": "STDEVP([Marks.C2:.C11])",
        "excel": "STDEVP(Marks!C2:C11)"
       },
@@ -4264,26 +4372,26 @@
        "kind": "string",
        "value": "The same, treating the classes as the whole population",
        "shown": "The same, treating the classes as the whole population",
-       "ref": "D15"
+       "ref": "D19"
       },
       {
        "kind": "string",
        "value": "VAR",
        "shown": "VAR",
-       "ref": "A16"
+       "ref": "A20"
       },
       {
        "kind": "string",
        "value": "=VAR(Marks.E2:E11)",
        "shown": "=VAR(Marks.E2:E11)",
-       "ref": "B16"
+       "ref": "B20"
       },
       {
        "kind": "float",
        "value": "217.733333333333",
        "shown": "217.733333333333",
        "formula": "=VAR([Marks.E2:.E11])",
-       "ref": "C16",
+       "ref": "C20",
        "odf": "VAR([Marks.E2:.E11])",
        "excel": "VAR(Marks!E2:E11)"
       },
@@ -4291,26 +4399,26 @@
        "kind": "string",
        "value": "Variance of the science marks, as a sample",
        "shown": "Variance of the science marks, as a sample",
-       "ref": "D16"
+       "ref": "D20"
       },
       {
        "kind": "string",
        "value": "VARP",
        "shown": "VARP",
-       "ref": "A17"
+       "ref": "A21"
       },
       {
        "kind": "string",
        "value": "=VARP(Marks.E2:E11)",
        "shown": "=VARP(Marks.E2:E11)",
-       "ref": "B17"
+       "ref": "B21"
       },
       {
        "kind": "float",
        "value": "195.96",
        "shown": "195.96",
        "formula": "=VARP([Marks.E2:.E11])",
-       "ref": "C17",
+       "ref": "C21",
        "odf": "VARP([Marks.E2:.E11])",
        "excel": "VARP(Marks!E2:E11)"
       },
@@ -4318,7 +4426,7 @@
        "kind": "string",
        "value": "The same, as a population",
        "shown": "The same, as a population",
-       "ref": "D17"
+       "ref": "D21"
       }
      ]
     }
@@ -4393,6 +4501,46 @@
      "kind": "float",
      "value": "47",
      "shown": "47"
+    },
+    {
+     "function": "COM.MICROSOFT.MAXIFS",
+     "formula": "=COM.MICROSOFT.MAXIFS([Marks.C2:.C11];[Marks.B2:.B11];\"7B\")",
+     "typed": "=COM.MICROSOFT.MAXIFS(Marks.C2:C11;Marks.B2:B11;\"7B\")",
+     "excel": "_xlfn.MAXIFS(Marks!C2:C11,Marks!B2:B11,\"7B\")",
+     "what": "Excel's MAXIFS: the best maths mark in 7B",
+     "kind": "float",
+     "value": "91",
+     "shown": "91"
+    },
+    {
+     "function": "COM.MICROSOFT.MAXIFS",
+     "formula": "=COM.MICROSOFT.MAXIFS([Marks.D2:.D11];[Marks.B2:.B11];\"7B\";[Marks.E2:.E11];\"<80\")",
+     "typed": "=COM.MICROSOFT.MAXIFS(Marks.D2:D11;Marks.B2:B11;\"7B\";Marks.E2:E11;\"<80\")",
+     "excel": "_xlfn.MAXIFS(Marks!D2:D11,Marks!B2:B11,\"7B\",Marks!E2:E11,\"<80\")",
+     "what": "Best English mark in 7B among science marks under 80: the note is skipped",
+     "kind": "float",
+     "value": "68",
+     "shown": "68"
+    },
+    {
+     "function": "COM.MICROSOFT.MINIFS",
+     "formula": "=COM.MICROSOFT.MINIFS([Marks.E2:.E11];[Marks.B2:.B11];\"7A\")",
+     "typed": "=COM.MICROSOFT.MINIFS(Marks.E2:E11;Marks.B2:B11;\"7A\")",
+     "excel": "_xlfn.MINIFS(Marks!E2:E11,Marks!B2:B11,\"7A\")",
+     "what": "Excel's MINIFS: the lowest science mark in 7A",
+     "kind": "float",
+     "value": "70",
+     "shown": "70"
+    },
+    {
+     "function": "COM.MICROSOFT.MINIFS",
+     "formula": "=COM.MICROSOFT.MINIFS([Marks.C2:.C11];[Marks.B2:.B11];\"8A\")",
+     "typed": "=COM.MICROSOFT.MINIFS(Marks.C2:C11;Marks.B2:B11;\"8A\")",
+     "excel": "_xlfn.MINIFS(Marks!C2:C11,Marks!B2:B11,\"8A\")",
+     "what": "There is no class 8A: nothing matches, and the answer is 0",
+     "kind": "float",
+     "value": "0",
+     "shown": "0"
     },
     {
      "function": "LARGE",

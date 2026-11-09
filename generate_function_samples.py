@@ -241,7 +241,13 @@ def displayed(formula):
     return "".join(out)
 
 
-EXCEL_RENAMED = {"COM.MICROSOFT.CEILING": "CEILING", "COM.MICROSOFT.FLOOR": "FLOOR"}
+EXCEL_RENAMED = {
+    "COM.MICROSOFT.CEILING": "CEILING",
+    "COM.MICROSOFT.FLOOR": "FLOOR",
+    # Excel's own files carry the prefix that marks a function newer than 2007.
+    "COM.MICROSOFT.MAXIFS": "_xlfn.MAXIFS",
+    "COM.MICROSOFT.MINIFS": "_xlfn.MINIFS",
+}
 # OpenFormula's own CEILING and FLOOR take a Mode, and Excel's under the same name do not:
 # a formula calling one has no Excel spelling at all.
 ODF_ONLY = ("CEILING", "FLOOR")
