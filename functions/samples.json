@@ -2128,6 +2128,60 @@
        "value": "Bearing of the shed above due east — ATAN2 takes x first",
        "shown": "Bearing of the shed above due east — ATAN2 takes x first",
        "ref": "D37"
+      },
+      {
+       "kind": "string",
+       "value": "SUMSQ",
+       "shown": "SUMSQ",
+       "ref": "A38"
+      },
+      {
+       "kind": "string",
+       "value": "=SUMSQ(3;4)",
+       "shown": "=SUMSQ(3;4)",
+       "ref": "B38"
+      },
+      {
+       "kind": "float",
+       "value": "25",
+       "shown": "25",
+       "formula": "=SUMSQ(3;4)",
+       "ref": "C38",
+       "odf": "SUMSQ(3;4)",
+       "excel": "SUMSQ(3,4)"
+      },
+      {
+       "kind": "string",
+       "value": "The squares of three and four, added",
+       "shown": "The squares of three and four, added",
+       "ref": "D38"
+      },
+      {
+       "kind": "string",
+       "value": "COMBIN",
+       "shown": "COMBIN",
+       "ref": "A39"
+      },
+      {
+       "kind": "string",
+       "value": "=COMBIN(6;2)",
+       "shown": "=COMBIN(6;2)",
+       "ref": "B39"
+      },
+      {
+       "kind": "float",
+       "value": "15",
+       "shown": "15",
+       "formula": "=COMBIN(6;2)",
+       "ref": "C39",
+       "odf": "COMBIN(6;2)",
+       "excel": "COMBIN(6,2)"
+      },
+      {
+       "kind": "string",
+       "value": "Pairs of plants from six seedlings",
+       "shown": "Pairs of plants from six seedlings",
+       "ref": "D39"
       }
      ]
     }
@@ -2492,6 +2546,26 @@
      "kind": "float",
      "value": "36.869897645844",
      "shown": "36.869897645844"
+    },
+    {
+     "function": "SUMSQ",
+     "formula": "=SUMSQ(3;4)",
+     "typed": "=SUMSQ(3;4)",
+     "excel": "SUMSQ(3,4)",
+     "what": "The squares of three and four, added",
+     "kind": "float",
+     "value": "25",
+     "shown": "25"
+    },
+    {
+     "function": "COMBIN",
+     "formula": "=COMBIN(6;2)",
+     "typed": "=COMBIN(6;2)",
+     "excel": "COMBIN(6,2)",
+     "what": "Pairs of plants from six seedlings",
+     "kind": "float",
+     "value": "15",
+     "shown": "15"
     }
    ]
   },
@@ -4643,6 +4717,411 @@
        "value": "Excel's VAR.P: VARP by its new name",
        "shown": "Excel's VAR.P: VARP by its new name",
        "ref": "D29"
+      },
+      {
+       "kind": "string",
+       "value": "PERCENTILE",
+       "shown": "PERCENTILE",
+       "ref": "A30"
+      },
+      {
+       "kind": "string",
+       "value": "=PERCENTILE(Marks.C2:C11;0.9)",
+       "shown": "=PERCENTILE(Marks.C2:C11;0.9)",
+       "ref": "B30"
+      },
+      {
+       "kind": "float",
+       "value": "91.4",
+       "shown": "91.4",
+       "formula": "=PERCENTILE([Marks.C2:.C11];0.9)",
+       "ref": "C30",
+       "odf": "PERCENTILE([Marks.C2:.C11];0.9)",
+       "excel": "PERCENTILE(Marks!C2:C11,0.9)"
+      },
+      {
+       "kind": "string",
+       "value": "The maths mark the top tenth reached",
+       "shown": "The maths mark the top tenth reached",
+       "ref": "D30"
+      },
+      {
+       "kind": "string",
+       "value": "QUARTILE",
+       "shown": "QUARTILE",
+       "ref": "A31"
+      },
+      {
+       "kind": "string",
+       "value": "=QUARTILE(Marks.E2:E11;1)",
+       "shown": "=QUARTILE(Marks.E2:E11;1)",
+       "ref": "B31"
+      },
+      {
+       "kind": "float",
+       "value": "71",
+       "shown": "71",
+       "formula": "=QUARTILE([Marks.E2:.E11];1)",
+       "ref": "C31",
+       "odf": "QUARTILE([Marks.E2:.E11];1)",
+       "excel": "QUARTILE(Marks!E2:E11,1)"
+      },
+      {
+       "kind": "string",
+       "value": "The science mark a quarter of the class stayed below",
+       "shown": "The science mark a quarter of the class stayed below",
+       "ref": "D31"
+      },
+      {
+       "kind": "string",
+       "value": "MODE",
+       "shown": "MODE",
+       "ref": "A32"
+      },
+      {
+       "kind": "string",
+       "value": "=MODE(70;72;70;88;72;70)",
+       "shown": "=MODE(70;72;70;88;72;70)",
+       "ref": "B32"
+      },
+      {
+       "kind": "float",
+       "value": "70",
+       "shown": "70",
+       "formula": "=MODE(70;72;70;88;72;70)",
+       "ref": "C32",
+       "odf": "MODE(70;72;70;88;72;70)",
+       "excel": "MODE(70,72,70,88,72,70)"
+      },
+      {
+       "kind": "string",
+       "value": "The most frequent of a few marks",
+       "shown": "The most frequent of a few marks",
+       "ref": "D32"
+      },
+      {
+       "kind": "string",
+       "value": "PERCENTRANK",
+       "shown": "PERCENTRANK",
+       "ref": "A33"
+      },
+      {
+       "kind": "string",
+       "value": "=PERCENTRANK(Marks.C2:C11;Marks.C6)",
+       "shown": "=PERCENTRANK(Marks.C2:C11;Marks.C6)",
+       "ref": "B33"
+      },
+      {
+       "kind": "float",
+       "value": "0.667",
+       "shown": "0.667",
+       "formula": "=PERCENTRANK([Marks.C2:.C11];[Marks.C6])",
+       "ref": "C33",
+       "odf": "PERCENTRANK([Marks.C2:.C11];[Marks.C6])",
+       "excel": "PERCENTRANK(Marks!C2:C11,Marks!C6)"
+      },
+      {
+       "kind": "string",
+       "value": "Ella's maths mark as a share of the class below her",
+       "shown": "Ella's maths mark as a share of the class below her",
+       "ref": "D33"
+      },
+      {
+       "kind": "string",
+       "value": "CORREL",
+       "shown": "CORREL",
+       "ref": "A34"
+      },
+      {
+       "kind": "string",
+       "value": "=CORREL(Marks.C2:C11;Marks.E2:E11)",
+       "shown": "=CORREL(Marks.C2:C11;Marks.E2:E11)",
+       "ref": "B34"
+      },
+      {
+       "kind": "float",
+       "value": "0.998653284117567",
+       "shown": "0.998653284117567",
+       "formula": "=CORREL([Marks.C2:.C11];[Marks.E2:.E11])",
+       "ref": "C34",
+       "odf": "CORREL([Marks.C2:.C11];[Marks.E2:.E11])",
+       "excel": "CORREL(Marks!C2:C11,Marks!E2:E11)"
+      },
+      {
+       "kind": "string",
+       "value": "How closely maths and science marks move together",
+       "shown": "How closely maths and science marks move together",
+       "ref": "D34"
+      },
+      {
+       "kind": "string",
+       "value": "PEARSON",
+       "shown": "PEARSON",
+       "ref": "A35"
+      },
+      {
+       "kind": "string",
+       "value": "=PEARSON(Marks.C2:C11;Marks.E2:E11)",
+       "shown": "=PEARSON(Marks.C2:C11;Marks.E2:E11)",
+       "ref": "B35"
+      },
+      {
+       "kind": "float",
+       "value": "0.998653284117567",
+       "shown": "0.998653284117567",
+       "formula": "=PEARSON([Marks.C2:.C11];[Marks.E2:.E11])",
+       "ref": "C35",
+       "odf": "PEARSON([Marks.C2:.C11];[Marks.E2:.E11])",
+       "excel": "PEARSON(Marks!C2:C11,Marks!E2:E11)"
+      },
+      {
+       "kind": "string",
+       "value": "The same coefficient by its other name",
+       "shown": "The same coefficient by its other name",
+       "ref": "D35"
+      },
+      {
+       "kind": "string",
+       "value": "RSQ",
+       "shown": "RSQ",
+       "ref": "A36"
+      },
+      {
+       "kind": "string",
+       "value": "=RSQ(Marks.E2:E11;Marks.C2:C11)",
+       "shown": "=RSQ(Marks.E2:E11;Marks.C2:C11)",
+       "ref": "B36"
+      },
+      {
+       "kind": "float",
+       "value": "0.997308381878801",
+       "shown": "0.997308381878801",
+       "formula": "=RSQ([Marks.E2:.E11];[Marks.C2:.C11])",
+       "ref": "C36",
+       "odf": "RSQ([Marks.E2:.E11];[Marks.C2:.C11])",
+       "excel": "RSQ(Marks!E2:E11,Marks!C2:C11)"
+      },
+      {
+       "kind": "string",
+       "value": "How much of science maths explains",
+       "shown": "How much of science maths explains",
+       "ref": "D36"
+      },
+      {
+       "kind": "string",
+       "value": "SLOPE",
+       "shown": "SLOPE",
+       "ref": "A37"
+      },
+      {
+       "kind": "string",
+       "value": "=SLOPE(Marks.E2:E11;Marks.C2:C11)",
+       "shown": "=SLOPE(Marks.E2:E11;Marks.C2:C11)",
+       "ref": "B37"
+      },
+      {
+       "kind": "float",
+       "value": "0.9357107656467",
+       "shown": "0.9357107656467",
+       "formula": "=SLOPE([Marks.E2:.E11];[Marks.C2:.C11])",
+       "ref": "C37",
+       "odf": "SLOPE([Marks.E2:.E11];[Marks.C2:.C11])",
+       "excel": "SLOPE(Marks!E2:E11,Marks!C2:C11)"
+      },
+      {
+       "kind": "string",
+       "value": "Science points per maths point",
+       "shown": "Science points per maths point",
+       "ref": "D37"
+      },
+      {
+       "kind": "string",
+       "value": "INTERCEPT",
+       "shown": "INTERCEPT",
+       "ref": "A38"
+      },
+      {
+       "kind": "string",
+       "value": "=INTERCEPT(Marks.E2:E11;Marks.C2:C11)",
+       "shown": "=INTERCEPT(Marks.E2:E11;Marks.C2:C11)",
+       "ref": "B38"
+      },
+      {
+       "kind": "float",
+       "value": "8.27669011245015",
+       "shown": "8.27669011245015",
+       "formula": "=INTERCEPT([Marks.E2:.E11];[Marks.C2:.C11])",
+       "ref": "C38",
+       "odf": "INTERCEPT([Marks.E2:.E11];[Marks.C2:.C11])",
+       "excel": "INTERCEPT(Marks!E2:E11,Marks!C2:C11)"
+      },
+      {
+       "kind": "string",
+       "value": "Where the science line crosses zero maths",
+       "shown": "Where the science line crosses zero maths",
+       "ref": "D38"
+      },
+      {
+       "kind": "string",
+       "value": "FORECAST",
+       "shown": "FORECAST",
+       "ref": "A39"
+      },
+      {
+       "kind": "string",
+       "value": "=FORECAST(75;Marks.E2:E11;Marks.C2:C11)",
+       "shown": "=FORECAST(75;Marks.E2:E11;Marks.C2:C11)",
+       "ref": "B39"
+      },
+      {
+       "kind": "float",
+       "value": "78.4549975359527",
+       "shown": "78.4549975359527",
+       "formula": "=FORECAST(75;[Marks.E2:.E11];[Marks.C2:.C11])",
+       "ref": "C39",
+       "odf": "FORECAST(75;[Marks.E2:.E11];[Marks.C2:.C11])",
+       "excel": "FORECAST(75,Marks!E2:E11,Marks!C2:C11)"
+      },
+      {
+       "kind": "string",
+       "value": "The science mark a 75 in maths suggests",
+       "shown": "The science mark a 75 in maths suggests",
+       "ref": "D39"
+      },
+      {
+       "kind": "string",
+       "value": "DEVSQ",
+       "shown": "DEVSQ",
+       "ref": "A40"
+      },
+      {
+       "kind": "string",
+       "value": "=DEVSQ(Marks.C2:C11)",
+       "shown": "=DEVSQ(Marks.C2:C11)",
+       "ref": "B40"
+      },
+      {
+       "kind": "float",
+       "value": "2232.1",
+       "shown": "2232.1",
+       "formula": "=DEVSQ([Marks.C2:.C11])",
+       "ref": "C40",
+       "odf": "DEVSQ([Marks.C2:.C11])",
+       "excel": "DEVSQ(Marks!C2:C11)"
+      },
+      {
+       "kind": "string",
+       "value": "The spread of the maths marks, squared and summed",
+       "shown": "The spread of the maths marks, squared and summed",
+       "ref": "D40"
+      },
+      {
+       "kind": "string",
+       "value": "AVEDEV",
+       "shown": "AVEDEV",
+       "ref": "A41"
+      },
+      {
+       "kind": "string",
+       "value": "=AVEDEV(Marks.C2:C11)",
+       "shown": "=AVEDEV(Marks.C2:C11)",
+       "ref": "B41"
+      },
+      {
+       "kind": "float",
+       "value": "12.7",
+       "shown": "12.7",
+       "formula": "=AVEDEV([Marks.C2:.C11])",
+       "ref": "C41",
+       "odf": "AVEDEV([Marks.C2:.C11])",
+       "excel": "AVEDEV(Marks!C2:C11)"
+      },
+      {
+       "kind": "string",
+       "value": "How far a maths mark is from the mean, on average",
+       "shown": "How far a maths mark is from the mean, on average",
+       "ref": "D41"
+      },
+      {
+       "kind": "string",
+       "value": "GEOMEAN",
+       "shown": "GEOMEAN",
+       "ref": "A42"
+      },
+      {
+       "kind": "string",
+       "value": "=GEOMEAN(Marks.E2:E11)",
+       "shown": "=GEOMEAN(Marks.E2:E11)",
+       "ref": "B42"
+      },
+      {
+       "kind": "float",
+       "value": "76.4429070653117",
+       "shown": "76.4429070653117",
+       "formula": "=GEOMEAN([Marks.E2:.E11])",
+       "ref": "C42",
+       "odf": "GEOMEAN([Marks.E2:.E11])",
+       "excel": "GEOMEAN(Marks!E2:E11)"
+      },
+      {
+       "kind": "string",
+       "value": "The science marks' geometric mean",
+       "shown": "The science marks' geometric mean",
+       "ref": "D42"
+      },
+      {
+       "kind": "string",
+       "value": "HARMEAN",
+       "shown": "HARMEAN",
+       "ref": "A43"
+      },
+      {
+       "kind": "string",
+       "value": "=HARMEAN(Marks.E2:E11)",
+       "shown": "=HARMEAN(Marks.E2:E11)",
+       "ref": "B43"
+      },
+      {
+       "kind": "float",
+       "value": "74.9935751717485",
+       "shown": "74.9935751717485",
+       "formula": "=HARMEAN([Marks.E2:.E11])",
+       "ref": "C43",
+       "odf": "HARMEAN([Marks.E2:.E11])",
+       "excel": "HARMEAN(Marks!E2:E11)"
+      },
+      {
+       "kind": "string",
+       "value": "…and their harmonic mean",
+       "shown": "…and their harmonic mean",
+       "ref": "D43"
+      },
+      {
+       "kind": "string",
+       "value": "PERMUT",
+       "shown": "PERMUT",
+       "ref": "A44"
+      },
+      {
+       "kind": "string",
+       "value": "=PERMUT(10;3)",
+       "shown": "=PERMUT(10;3)",
+       "ref": "B44"
+      },
+      {
+       "kind": "float",
+       "value": "720",
+       "shown": "720",
+       "formula": "=PERMUT(10;3)",
+       "ref": "C44",
+       "odf": "PERMUT(10;3)",
+       "excel": "PERMUT(10,3)"
+      },
+      {
+       "kind": "string",
+       "value": "Gold, silver and bronze among ten students",
+       "shown": "Gold, silver and bronze among ten students",
+       "ref": "D44"
       }
      ]
     }
@@ -4927,6 +5406,156 @@
      "kind": "float",
      "value": "195.96",
      "shown": "195.96"
+    },
+    {
+     "function": "PERCENTILE",
+     "formula": "=PERCENTILE([Marks.C2:.C11];0.9)",
+     "typed": "=PERCENTILE(Marks.C2:C11;0.9)",
+     "excel": "PERCENTILE(Marks!C2:C11,0.9)",
+     "what": "The maths mark the top tenth reached",
+     "kind": "float",
+     "value": "91.4",
+     "shown": "91.4"
+    },
+    {
+     "function": "QUARTILE",
+     "formula": "=QUARTILE([Marks.E2:.E11];1)",
+     "typed": "=QUARTILE(Marks.E2:E11;1)",
+     "excel": "QUARTILE(Marks!E2:E11,1)",
+     "what": "The science mark a quarter of the class stayed below",
+     "kind": "float",
+     "value": "71",
+     "shown": "71"
+    },
+    {
+     "function": "MODE",
+     "formula": "=MODE(70;72;70;88;72;70)",
+     "typed": "=MODE(70;72;70;88;72;70)",
+     "excel": "MODE(70,72,70,88,72,70)",
+     "what": "The most frequent of a few marks",
+     "kind": "float",
+     "value": "70",
+     "shown": "70"
+    },
+    {
+     "function": "PERCENTRANK",
+     "formula": "=PERCENTRANK([Marks.C2:.C11];[Marks.C6])",
+     "typed": "=PERCENTRANK(Marks.C2:C11;Marks.C6)",
+     "excel": "PERCENTRANK(Marks!C2:C11,Marks!C6)",
+     "what": "Ella's maths mark as a share of the class below her",
+     "kind": "float",
+     "value": "0.667",
+     "shown": "0.667"
+    },
+    {
+     "function": "CORREL",
+     "formula": "=CORREL([Marks.C2:.C11];[Marks.E2:.E11])",
+     "typed": "=CORREL(Marks.C2:C11;Marks.E2:E11)",
+     "excel": "CORREL(Marks!C2:C11,Marks!E2:E11)",
+     "what": "How closely maths and science marks move together",
+     "kind": "float",
+     "value": "0.998653284117567",
+     "shown": "0.998653284117567"
+    },
+    {
+     "function": "PEARSON",
+     "formula": "=PEARSON([Marks.C2:.C11];[Marks.E2:.E11])",
+     "typed": "=PEARSON(Marks.C2:C11;Marks.E2:E11)",
+     "excel": "PEARSON(Marks!C2:C11,Marks!E2:E11)",
+     "what": "The same coefficient by its other name",
+     "kind": "float",
+     "value": "0.998653284117567",
+     "shown": "0.998653284117567"
+    },
+    {
+     "function": "RSQ",
+     "formula": "=RSQ([Marks.E2:.E11];[Marks.C2:.C11])",
+     "typed": "=RSQ(Marks.E2:E11;Marks.C2:C11)",
+     "excel": "RSQ(Marks!E2:E11,Marks!C2:C11)",
+     "what": "How much of science maths explains",
+     "kind": "float",
+     "value": "0.997308381878801",
+     "shown": "0.997308381878801"
+    },
+    {
+     "function": "SLOPE",
+     "formula": "=SLOPE([Marks.E2:.E11];[Marks.C2:.C11])",
+     "typed": "=SLOPE(Marks.E2:E11;Marks.C2:C11)",
+     "excel": "SLOPE(Marks!E2:E11,Marks!C2:C11)",
+     "what": "Science points per maths point",
+     "kind": "float",
+     "value": "0.9357107656467",
+     "shown": "0.9357107656467"
+    },
+    {
+     "function": "INTERCEPT",
+     "formula": "=INTERCEPT([Marks.E2:.E11];[Marks.C2:.C11])",
+     "typed": "=INTERCEPT(Marks.E2:E11;Marks.C2:C11)",
+     "excel": "INTERCEPT(Marks!E2:E11,Marks!C2:C11)",
+     "what": "Where the science line crosses zero maths",
+     "kind": "float",
+     "value": "8.27669011245015",
+     "shown": "8.27669011245015"
+    },
+    {
+     "function": "FORECAST",
+     "formula": "=FORECAST(75;[Marks.E2:.E11];[Marks.C2:.C11])",
+     "typed": "=FORECAST(75;Marks.E2:E11;Marks.C2:C11)",
+     "excel": "FORECAST(75,Marks!E2:E11,Marks!C2:C11)",
+     "what": "The science mark a 75 in maths suggests",
+     "kind": "float",
+     "value": "78.4549975359527",
+     "shown": "78.4549975359527"
+    },
+    {
+     "function": "DEVSQ",
+     "formula": "=DEVSQ([Marks.C2:.C11])",
+     "typed": "=DEVSQ(Marks.C2:C11)",
+     "excel": "DEVSQ(Marks!C2:C11)",
+     "what": "The spread of the maths marks, squared and summed",
+     "kind": "float",
+     "value": "2232.1",
+     "shown": "2232.1"
+    },
+    {
+     "function": "AVEDEV",
+     "formula": "=AVEDEV([Marks.C2:.C11])",
+     "typed": "=AVEDEV(Marks.C2:C11)",
+     "excel": "AVEDEV(Marks!C2:C11)",
+     "what": "How far a maths mark is from the mean, on average",
+     "kind": "float",
+     "value": "12.7",
+     "shown": "12.7"
+    },
+    {
+     "function": "GEOMEAN",
+     "formula": "=GEOMEAN([Marks.E2:.E11])",
+     "typed": "=GEOMEAN(Marks.E2:E11)",
+     "excel": "GEOMEAN(Marks!E2:E11)",
+     "what": "The science marks' geometric mean",
+     "kind": "float",
+     "value": "76.4429070653117",
+     "shown": "76.4429070653117"
+    },
+    {
+     "function": "HARMEAN",
+     "formula": "=HARMEAN([Marks.E2:.E11])",
+     "typed": "=HARMEAN(Marks.E2:E11)",
+     "excel": "HARMEAN(Marks!E2:E11)",
+     "what": "…and their harmonic mean",
+     "kind": "float",
+     "value": "74.9935751717485",
+     "shown": "74.9935751717485"
+    },
+    {
+     "function": "PERMUT",
+     "formula": "=PERMUT(10;3)",
+     "typed": "=PERMUT(10;3)",
+     "excel": "PERMUT(10,3)",
+     "what": "Gold, silver and bronze among ten students",
+     "kind": "float",
+     "value": "720",
+     "shown": "720"
     }
    ]
   },

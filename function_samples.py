@@ -166,6 +166,8 @@ MATH = Category(
          "The same slope, from the run and the surface length"),
         ("ATAN2", "=DEGREES(ATAN2([Garden.B16];[Garden.B17]))",
          "Bearing of the shed above due east — ATAN2 takes x first"),
+        ("SUMSQ", "=SUMSQ(3;4)", "The squares of three and four, added"),
+        ("COMBIN", "=COMBIN(6;2)", "Pairs of plants from six seedlings"),
     ],
 )
 
@@ -283,6 +285,21 @@ STATISTICAL = Category(
         ("COM.MICROSOFT.STDEV.P", "=COM.MICROSOFT.STDEV.P([Marks.C2:.C11])", "Excel's STDEV.P: STDEVP by its new name"),
         ("COM.MICROSOFT.VAR.S", "=COM.MICROSOFT.VAR.S([Marks.E2:.E11])", "Excel's VAR.S: VAR by its new name"),
         ("COM.MICROSOFT.VAR.P", "=COM.MICROSOFT.VAR.P([Marks.E2:.E11])", "Excel's VAR.P: VARP by its new name"),
+        ("PERCENTILE", "=PERCENTILE([Marks.C2:.C11];0.9)", "The maths mark the top tenth reached"),
+        ("QUARTILE", "=QUARTILE([Marks.E2:.E11];1)", "The science mark a quarter of the class stayed below"),
+        ("MODE", "=MODE(70;72;70;88;72;70)", "The most frequent of a few marks"),
+        ("PERCENTRANK", "=PERCENTRANK([Marks.C2:.C11];[Marks.C6])", "Ella's maths mark as a share of the class below her"),
+        ("CORREL", "=CORREL([Marks.C2:.C11];[Marks.E2:.E11])", "How closely maths and science marks move together"),
+        ("PEARSON", "=PEARSON([Marks.C2:.C11];[Marks.E2:.E11])", "The same coefficient by its other name"),
+        ("RSQ", "=RSQ([Marks.E2:.E11];[Marks.C2:.C11])", "How much of science maths explains"),
+        ("SLOPE", "=SLOPE([Marks.E2:.E11];[Marks.C2:.C11])", "Science points per maths point"),
+        ("INTERCEPT", "=INTERCEPT([Marks.E2:.E11];[Marks.C2:.C11])", "Where the science line crosses zero maths"),
+        ("FORECAST", "=FORECAST(75;[Marks.E2:.E11];[Marks.C2:.C11])", "The science mark a 75 in maths suggests"),
+        ("DEVSQ", "=DEVSQ([Marks.C2:.C11])", "The spread of the maths marks, squared and summed"),
+        ("AVEDEV", "=AVEDEV([Marks.C2:.C11])", "How far a maths mark is from the mean, on average"),
+        ("GEOMEAN", "=GEOMEAN([Marks.E2:.E11])", "The science marks' geometric mean"),
+        ("HARMEAN", "=HARMEAN([Marks.E2:.E11])", "…and their harmonic mean"),
+        ("PERMUT", "=PERMUT(10;3)", "Gold, silver and bronze among ten students"),
     ],
 )
 
