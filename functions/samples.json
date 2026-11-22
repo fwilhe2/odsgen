@@ -4535,6 +4535,114 @@
        "value": "Excel's GAMMA.DIST: the chance homework takes at most 30 minutes, if times follow shape 4, scale 5",
        "shown": "Excel's GAMMA.DIST: the chance homework takes at most 30 minutes, if times follow shape 4, scale 5",
        "ref": "D25"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.STDEV.S",
+       "shown": "COM.MICROSOFT.STDEV.S",
+       "ref": "A26"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.STDEV.S(Marks.C2:C11)",
+       "shown": "=COM.MICROSOFT.STDEV.S(Marks.C2:C11)",
+       "ref": "B26"
+      },
+      {
+       "kind": "float",
+       "value": "15.7483685222029",
+       "shown": "15.7483685222029",
+       "formula": "=COM.MICROSOFT.STDEV.S([Marks.C2:.C11])",
+       "ref": "C26",
+       "odf": "COM.MICROSOFT.STDEV.S([Marks.C2:.C11])",
+       "excel": "COM.MICROSOFT.STDEV.S(Marks!C2:C11)"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's STDEV.S: STDEV by its new name",
+       "shown": "Excel's STDEV.S: STDEV by its new name",
+       "ref": "D26"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.STDEV.P",
+       "shown": "COM.MICROSOFT.STDEV.P",
+       "ref": "A27"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.STDEV.P(Marks.C2:C11)",
+       "shown": "=COM.MICROSOFT.STDEV.P(Marks.C2:C11)",
+       "ref": "B27"
+      },
+      {
+       "kind": "float",
+       "value": "14.9402141885583",
+       "shown": "14.9402141885583",
+       "formula": "=COM.MICROSOFT.STDEV.P([Marks.C2:.C11])",
+       "ref": "C27",
+       "odf": "COM.MICROSOFT.STDEV.P([Marks.C2:.C11])",
+       "excel": "COM.MICROSOFT.STDEV.P(Marks!C2:C11)"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's STDEV.P: STDEVP by its new name",
+       "shown": "Excel's STDEV.P: STDEVP by its new name",
+       "ref": "D27"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.VAR.S",
+       "shown": "COM.MICROSOFT.VAR.S",
+       "ref": "A28"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.VAR.S(Marks.E2:E11)",
+       "shown": "=COM.MICROSOFT.VAR.S(Marks.E2:E11)",
+       "ref": "B28"
+      },
+      {
+       "kind": "float",
+       "value": "217.733333333333",
+       "shown": "217.733333333333",
+       "formula": "=COM.MICROSOFT.VAR.S([Marks.E2:.E11])",
+       "ref": "C28",
+       "odf": "COM.MICROSOFT.VAR.S([Marks.E2:.E11])",
+       "excel": "COM.MICROSOFT.VAR.S(Marks!E2:E11)"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's VAR.S: VAR by its new name",
+       "shown": "Excel's VAR.S: VAR by its new name",
+       "ref": "D28"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.VAR.P",
+       "shown": "COM.MICROSOFT.VAR.P",
+       "ref": "A29"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.VAR.P(Marks.E2:E11)",
+       "shown": "=COM.MICROSOFT.VAR.P(Marks.E2:E11)",
+       "ref": "B29"
+      },
+      {
+       "kind": "float",
+       "value": "195.96",
+       "shown": "195.96",
+       "formula": "=COM.MICROSOFT.VAR.P([Marks.E2:.E11])",
+       "ref": "C29",
+       "odf": "COM.MICROSOFT.VAR.P([Marks.E2:.E11])",
+       "excel": "COM.MICROSOFT.VAR.P(Marks!E2:E11)"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's VAR.P: VARP by its new name",
+       "shown": "Excel's VAR.P: VARP by its new name",
+       "ref": "D29"
       }
      ]
     }
@@ -4779,6 +4887,46 @@
      "kind": "float",
      "value": "0.848796117223352",
      "shown": "0.848796117223352"
+    },
+    {
+     "function": "COM.MICROSOFT.STDEV.S",
+     "formula": "=COM.MICROSOFT.STDEV.S([Marks.C2:.C11])",
+     "typed": "=COM.MICROSOFT.STDEV.S(Marks.C2:C11)",
+     "excel": "COM.MICROSOFT.STDEV.S(Marks!C2:C11)",
+     "what": "Excel's STDEV.S: STDEV by its new name",
+     "kind": "float",
+     "value": "15.7483685222029",
+     "shown": "15.7483685222029"
+    },
+    {
+     "function": "COM.MICROSOFT.STDEV.P",
+     "formula": "=COM.MICROSOFT.STDEV.P([Marks.C2:.C11])",
+     "typed": "=COM.MICROSOFT.STDEV.P(Marks.C2:C11)",
+     "excel": "COM.MICROSOFT.STDEV.P(Marks!C2:C11)",
+     "what": "Excel's STDEV.P: STDEVP by its new name",
+     "kind": "float",
+     "value": "14.9402141885583",
+     "shown": "14.9402141885583"
+    },
+    {
+     "function": "COM.MICROSOFT.VAR.S",
+     "formula": "=COM.MICROSOFT.VAR.S([Marks.E2:.E11])",
+     "typed": "=COM.MICROSOFT.VAR.S(Marks.E2:E11)",
+     "excel": "COM.MICROSOFT.VAR.S(Marks!E2:E11)",
+     "what": "Excel's VAR.S: VAR by its new name",
+     "kind": "float",
+     "value": "217.733333333333",
+     "shown": "217.733333333333"
+    },
+    {
+     "function": "COM.MICROSOFT.VAR.P",
+     "formula": "=COM.MICROSOFT.VAR.P([Marks.E2:.E11])",
+     "typed": "=COM.MICROSOFT.VAR.P(Marks.E2:E11)",
+     "excel": "COM.MICROSOFT.VAR.P(Marks!E2:E11)",
+     "what": "Excel's VAR.P: VARP by its new name",
+     "kind": "float",
+     "value": "195.96",
+     "shown": "195.96"
     }
    ]
   },
@@ -5436,6 +5584,114 @@
        "value": "Where Quayside Gym's order is in the list",
        "shown": "Where Quayside Gym's order is in the list",
        "ref": "D13"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.IFS",
+       "shown": "COM.MICROSOFT.IFS",
+       "ref": "A14"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.IFS(Orders.C3>2000;\"large\";Orders.C3>500;\"medium\";TRUE();\"small\")",
+       "shown": "=COM.MICROSOFT.IFS(Orders.C3>2000;\"large\";Orders.C3>500;\"medium\";TRUE();\"small\")",
+       "ref": "B14"
+      },
+      {
+       "kind": "string",
+       "value": "medium",
+       "shown": "medium",
+       "formula": "=COM.MICROSOFT.IFS([Orders.C3]>2000;\"large\";[Orders.C3]>500;\"medium\";TRUE();\"small\")",
+       "ref": "C14",
+       "odf": "COM.MICROSOFT.IFS([Orders.C3]>2000;\"large\";[Orders.C3]>500;\"medium\";TRUE();\"small\")",
+       "excel": "COM.MICROSOFT.IFS(Orders!C3>2000,\"large\",Orders!C3>500,\"medium\",TRUE,\"small\")"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's IFS: SO-1042's size band, without nesting IFs",
+       "shown": "Excel's IFS: SO-1042's size band, without nesting IFs",
+       "ref": "D14"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.IFS",
+       "shown": "COM.MICROSOFT.IFS",
+       "ref": "A15"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.IFS(Orders.C6>0;\"charge\")",
+       "shown": "=COM.MICROSOFT.IFS(Orders.C6>0;\"charge\")",
+       "ref": "B15"
+      },
+      {
+       "kind": "error",
+       "value": "#N/A",
+       "shown": "#N/A",
+       "formula": "=COM.MICROSOFT.IFS([Orders.C6]>0;\"charge\")",
+       "ref": "C15",
+       "odf": "COM.MICROSOFT.IFS([Orders.C6]>0;\"charge\")",
+       "excel": "COM.MICROSOFT.IFS(Orders!C6>0,\"charge\")"
+      },
+      {
+       "kind": "string",
+       "value": "No condition holds for a free order: #N/A",
+       "shown": "No condition holds for a free order: #N/A",
+       "ref": "D15"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.SWITCH",
+       "shown": "COM.MICROSOFT.SWITCH",
+       "ref": "A16"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.SWITCH(Orders.G3;TRUE();\"Courier\";FALSE();\"Post\")",
+       "shown": "=COM.MICROSOFT.SWITCH(Orders.G3;TRUE();\"Courier\";FALSE();\"Post\")",
+       "ref": "B16"
+      },
+      {
+       "kind": "string",
+       "value": "Courier",
+       "shown": "Courier",
+       "formula": "=COM.MICROSOFT.SWITCH([Orders.G3];TRUE();\"Courier\";FALSE();\"Post\")",
+       "ref": "C16",
+       "odf": "COM.MICROSOFT.SWITCH([Orders.G3];TRUE();\"Courier\";FALSE();\"Post\")",
+       "excel": "COM.MICROSOFT.SWITCH(Orders!G3,TRUE,\"Courier\",FALSE,\"Post\")"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's SWITCH: SO-1042's carrier by its express flag",
+       "shown": "Excel's SWITCH: SO-1042's carrier by its express flag",
+       "ref": "D16"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.SWITCH",
+       "shown": "COM.MICROSOFT.SWITCH",
+       "ref": "A17"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.SWITCH(Orders.B4;\"Harbor Café\";\"regular\";\"new\")",
+       "shown": "=COM.MICROSOFT.SWITCH(Orders.B4;\"Harbor Café\";\"regular\";\"new\")",
+       "ref": "B17"
+      },
+      {
+       "kind": "string",
+       "value": "new",
+       "shown": "new",
+       "formula": "=COM.MICROSOFT.SWITCH([Orders.B4];\"Harbor Café\";\"regular\";\"new\")",
+       "ref": "C17",
+       "odf": "COM.MICROSOFT.SWITCH([Orders.B4];\"Harbor Café\";\"regular\";\"new\")",
+       "excel": "COM.MICROSOFT.SWITCH(Orders!B4,\"Harbor Café\",\"regular\",\"new\")"
+      },
+      {
+       "kind": "string",
+       "value": "A customer not named is the default",
+       "shown": "A customer not named is the default",
+       "ref": "D17"
       }
      ]
     }
@@ -5560,6 +5816,46 @@
      "kind": "float",
      "value": "5",
      "shown": "5"
+    },
+    {
+     "function": "COM.MICROSOFT.IFS",
+     "formula": "=COM.MICROSOFT.IFS([Orders.C3]>2000;\"large\";[Orders.C3]>500;\"medium\";TRUE();\"small\")",
+     "typed": "=COM.MICROSOFT.IFS(Orders.C3>2000;\"large\";Orders.C3>500;\"medium\";TRUE();\"small\")",
+     "excel": "COM.MICROSOFT.IFS(Orders!C3>2000,\"large\",Orders!C3>500,\"medium\",TRUE,\"small\")",
+     "what": "Excel's IFS: SO-1042's size band, without nesting IFs",
+     "kind": "string",
+     "value": "medium",
+     "shown": "medium"
+    },
+    {
+     "function": "COM.MICROSOFT.IFS",
+     "formula": "=COM.MICROSOFT.IFS([Orders.C6]>0;\"charge\")",
+     "typed": "=COM.MICROSOFT.IFS(Orders.C6>0;\"charge\")",
+     "excel": "COM.MICROSOFT.IFS(Orders!C6>0,\"charge\")",
+     "what": "No condition holds for a free order: #N/A",
+     "kind": "error",
+     "value": "#N/A",
+     "shown": "#N/A"
+    },
+    {
+     "function": "COM.MICROSOFT.SWITCH",
+     "formula": "=COM.MICROSOFT.SWITCH([Orders.G3];TRUE();\"Courier\";FALSE();\"Post\")",
+     "typed": "=COM.MICROSOFT.SWITCH(Orders.G3;TRUE();\"Courier\";FALSE();\"Post\")",
+     "excel": "COM.MICROSOFT.SWITCH(Orders!G3,TRUE,\"Courier\",FALSE,\"Post\")",
+     "what": "Excel's SWITCH: SO-1042's carrier by its express flag",
+     "kind": "string",
+     "value": "Courier",
+     "shown": "Courier"
+    },
+    {
+     "function": "COM.MICROSOFT.SWITCH",
+     "formula": "=COM.MICROSOFT.SWITCH([Orders.B4];\"Harbor Café\";\"regular\";\"new\")",
+     "typed": "=COM.MICROSOFT.SWITCH(Orders.B4;\"Harbor Café\";\"regular\";\"new\")",
+     "excel": "COM.MICROSOFT.SWITCH(Orders!B4,\"Harbor Café\",\"regular\",\"new\")",
+     "what": "A customer not named is the default",
+     "kind": "string",
+     "value": "new",
+     "shown": "new"
     }
    ]
   },
@@ -7783,22 +8079,130 @@
       },
       {
        "kind": "string",
+       "value": "COM.MICROSOFT.CONCAT",
+       "shown": "COM.MICROSOFT.CONCAT",
+       "ref": "A24"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.CONCAT(Customers.E3;\" \";Customers.F3)",
+       "shown": "=COM.MICROSOFT.CONCAT(Customers.E3;\" \";Customers.F3)",
+       "ref": "B24"
+      },
+      {
+       "kind": "string",
+       "value": "London SW1A 1AA",
+       "shown": "London SW1A 1AA",
+       "formula": "=COM.MICROSOFT.CONCAT([Customers.E3];\" \";[Customers.F3])",
+       "ref": "C24",
+       "odf": "COM.MICROSOFT.CONCAT([Customers.E3];\" \";[Customers.F3])",
+       "excel": "COM.MICROSOFT.CONCAT(Customers!E3,\" \",Customers!F3)"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's CONCAT: Tom's city and postcode",
+       "shown": "Excel's CONCAT: Tom's city and postcode",
+       "ref": "D24"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.CONCAT",
+       "shown": "COM.MICROSOFT.CONCAT",
+       "ref": "A25"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.CONCAT(Customers.A2:A5)",
+       "shown": "=COM.MICROSOFT.CONCAT(Customers.A2:A5)",
+       "ref": "B25"
+      },
+      {
+       "kind": "string",
+       "value": "C-0042C-0043C-0044C-0045",
+       "shown": "C-0042C-0043C-0044C-0045",
+       "formula": "=COM.MICROSOFT.CONCAT([Customers.A2:.A5])",
+       "ref": "C25",
+       "odf": "COM.MICROSOFT.CONCAT([Customers.A2:.A5])",
+       "excel": "COM.MICROSOFT.CONCAT(Customers!A2:A5)"
+      },
+      {
+       "kind": "string",
+       "value": "Every ID run together, a range at once",
+       "shown": "Every ID run together, a range at once",
+       "ref": "D25"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.TEXTJOIN",
+       "shown": "COM.MICROSOFT.TEXTJOIN",
+       "ref": "A26"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.TEXTJOIN(\", \";TRUE();Customers.E2:E5)",
+       "shown": "=COM.MICROSOFT.TEXTJOIN(\", \";TRUE();Customers.E2:E5)",
+       "ref": "B26"
+      },
+      {
+       "kind": "string",
+       "value": "berlin, London, Tokyo, Copenhagen",
+       "shown": "berlin, London, Tokyo, Copenhagen",
+       "formula": "=COM.MICROSOFT.TEXTJOIN(\", \";TRUE();[Customers.E2:.E5])",
+       "ref": "C26",
+       "odf": "COM.MICROSOFT.TEXTJOIN(\", \";TRUE();[Customers.E2:.E5])",
+       "excel": "COM.MICROSOFT.TEXTJOIN(\", \",TRUE,Customers!E2:E5)"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's TEXTJOIN: the cities as a list",
+       "shown": "Excel's TEXTJOIN: the cities as a list",
+       "ref": "D26"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.TEXTJOIN",
+       "shown": "COM.MICROSOFT.TEXTJOIN",
+       "ref": "A27"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.TEXTJOIN(\"/\";FALSE();Customers.A2;\"\";Customers.A3)",
+       "shown": "=COM.MICROSOFT.TEXTJOIN(\"/\";FALSE();Customers.A2;\"\";Customers.A3)",
+       "ref": "B27"
+      },
+      {
+       "kind": "string",
+       "value": "C-0042//C-0043",
+       "shown": "C-0042//C-0043",
+       "formula": "=COM.MICROSOFT.TEXTJOIN(\"/\";FALSE();[Customers.A2];\"\";[Customers.A3])",
+       "ref": "C27",
+       "odf": "COM.MICROSOFT.TEXTJOIN(\"/\";FALSE();[Customers.A2];\"\";[Customers.A3])",
+       "excel": "COM.MICROSOFT.TEXTJOIN(\"/\",FALSE,Customers!A2,\"\",Customers!A3)"
+      },
+      {
+       "kind": "string",
+       "value": "Empty pieces kept when told to",
+       "shown": "Empty pieces kept when told to",
+       "ref": "D27"
+      },
+      {
+       "kind": "string",
        "value": "FIXED",
        "shown": "FIXED",
-       "ref": "A24"
+       "ref": "A28"
       },
       {
        "kind": "string",
        "value": "=\"Order total: \"&FIXED(1234.5;2)",
        "shown": "=\"Order total: \"&FIXED(1234.5;2)",
-       "ref": "B24"
+       "ref": "B28"
       },
       {
        "kind": "string",
        "value": "Order total: 1,234.50",
        "shown": "Order total: 1,234.50",
        "formula": "=\"Order total: \"&FIXED(1234.5;2)",
-       "ref": "C24",
+       "ref": "C28",
        "odf": "\"Order total: \"&FIXED(1234.5;2)",
        "excel": "\"Order total: \"&FIXED(1234.5,2)"
       },
@@ -7806,26 +8210,26 @@
        "kind": "string",
        "value": "An amount spelled with its separators inside a sentence",
        "shown": "An amount spelled with its separators inside a sentence",
-       "ref": "D24"
+       "ref": "D28"
       },
       {
        "kind": "string",
        "value": "FIXED",
        "shown": "FIXED",
-       "ref": "A25"
+       "ref": "A29"
       },
       {
        "kind": "string",
        "value": "=FIXED(Customers.H2;0;TRUE())",
        "shown": "=FIXED(Customers.H2;0;TRUE())",
-       "ref": "B25"
+       "ref": "B29"
       },
       {
        "kind": "string",
        "value": "2019",
        "shown": "2019",
        "formula": "=FIXED([Customers.H2];0;TRUE())",
-       "ref": "C25",
+       "ref": "C29",
        "odf": "FIXED([Customers.H2];0;TRUE())",
        "excel": "FIXED(Customers!H2,0,TRUE)"
       },
@@ -7833,7 +8237,7 @@
        "kind": "string",
        "value": "A year as text, with no thousands separator",
        "shown": "A year as text, with no thousands separator",
-       "ref": "D25"
+       "ref": "D29"
       }
      ]
     }
@@ -8058,6 +8462,46 @@
      "kind": "string",
      "value": "Aiko Tanaka",
      "shown": "Aiko Tanaka"
+    },
+    {
+     "function": "COM.MICROSOFT.CONCAT",
+     "formula": "=COM.MICROSOFT.CONCAT([Customers.E3];\" \";[Customers.F3])",
+     "typed": "=COM.MICROSOFT.CONCAT(Customers.E3;\" \";Customers.F3)",
+     "excel": "COM.MICROSOFT.CONCAT(Customers!E3,\" \",Customers!F3)",
+     "what": "Excel's CONCAT: Tom's city and postcode",
+     "kind": "string",
+     "value": "London SW1A 1AA",
+     "shown": "London SW1A 1AA"
+    },
+    {
+     "function": "COM.MICROSOFT.CONCAT",
+     "formula": "=COM.MICROSOFT.CONCAT([Customers.A2:.A5])",
+     "typed": "=COM.MICROSOFT.CONCAT(Customers.A2:A5)",
+     "excel": "COM.MICROSOFT.CONCAT(Customers!A2:A5)",
+     "what": "Every ID run together, a range at once",
+     "kind": "string",
+     "value": "C-0042C-0043C-0044C-0045",
+     "shown": "C-0042C-0043C-0044C-0045"
+    },
+    {
+     "function": "COM.MICROSOFT.TEXTJOIN",
+     "formula": "=COM.MICROSOFT.TEXTJOIN(\", \";TRUE();[Customers.E2:.E5])",
+     "typed": "=COM.MICROSOFT.TEXTJOIN(\", \";TRUE();Customers.E2:E5)",
+     "excel": "COM.MICROSOFT.TEXTJOIN(\", \",TRUE,Customers!E2:E5)",
+     "what": "Excel's TEXTJOIN: the cities as a list",
+     "kind": "string",
+     "value": "berlin, London, Tokyo, Copenhagen",
+     "shown": "berlin, London, Tokyo, Copenhagen"
+    },
+    {
+     "function": "COM.MICROSOFT.TEXTJOIN",
+     "formula": "=COM.MICROSOFT.TEXTJOIN(\"/\";FALSE();[Customers.A2];\"\";[Customers.A3])",
+     "typed": "=COM.MICROSOFT.TEXTJOIN(\"/\";FALSE();Customers.A2;\"\";Customers.A3)",
+     "excel": "COM.MICROSOFT.TEXTJOIN(\"/\",FALSE,Customers!A2,\"\",Customers!A3)",
+     "what": "Empty pieces kept when told to",
+     "kind": "string",
+     "value": "C-0042//C-0043",
+     "shown": "C-0042//C-0043"
     },
     {
      "function": "FIXED",
@@ -9972,6 +10416,141 @@
        "value": "Zone A's rates, named in Excel's spelling",
        "shown": "Zone A's rates, named in Excel's spelling",
        "ref": "D17"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.XLOOKUP",
+       "shown": "COM.MICROSOFT.XLOOKUP",
+       "ref": "A18"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.XLOOKUP(\"P-21\";Prices.A2:A6;Prices.D2:D6)",
+       "shown": "=COM.MICROSOFT.XLOOKUP(\"P-21\";Prices.A2:A6;Prices.D2:D6)",
+       "ref": "B18"
+      },
+      {
+       "kind": "float",
+       "value": "9.8",
+       "shown": "9.8",
+       "formula": "=COM.MICROSOFT.XLOOKUP(\"P-21\";[Prices.A2:.A6];[Prices.D2:.D6])",
+       "ref": "C18",
+       "odf": "COM.MICROSOFT.XLOOKUP(\"P-21\";[Prices.A2:.A6];[Prices.D2:.D6])",
+       "excel": "COM.MICROSOFT.XLOOKUP(\"P-21\",Prices!A2:A6,Prices!D2:D6)"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's XLOOKUP: the brass brackets' price",
+       "shown": "Excel's XLOOKUP: the brass brackets' price",
+       "ref": "D18"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.XLOOKUP",
+       "shown": "COM.MICROSOFT.XLOOKUP",
+       "ref": "A19"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.XLOOKUP(\"P-99\";Prices.A2:A6;Prices.B2:B6;\"not stocked\")",
+       "shown": "=COM.MICROSOFT.XLOOKUP(\"P-99\";Prices.A2:A6;Prices.B2:B6;\"not stocked\")",
+       "ref": "B19"
+      },
+      {
+       "kind": "string",
+       "value": "not stocked",
+       "shown": "not stocked",
+       "formula": "=COM.MICROSOFT.XLOOKUP(\"P-99\";[Prices.A2:.A6];[Prices.B2:.B6];\"not stocked\")",
+       "ref": "C19",
+       "odf": "COM.MICROSOFT.XLOOKUP(\"P-99\";[Prices.A2:.A6];[Prices.B2:.B6];\"not stocked\")",
+       "excel": "COM.MICROSOFT.XLOOKUP(\"P-99\",Prices!A2:A6,Prices!B2:B6,\"not stocked\")"
+      },
+      {
+       "kind": "string",
+       "value": "A SKU not on the list, said in words",
+       "shown": "A SKU not on the list, said in words",
+       "ref": "D19"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.XLOOKUP",
+       "shown": "COM.MICROSOFT.XLOOKUP",
+       "ref": "A20"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.XLOOKUP(7;Shipping.B1:F1;Shipping.B2:F2;;-1)",
+       "shown": "=COM.MICROSOFT.XLOOKUP(7;Shipping.B1:F1;Shipping.B2:F2;;-1)",
+       "ref": "B20"
+      },
+      {
+       "kind": "float",
+       "value": "9.9",
+       "shown": "9.9",
+       "formula": "=COM.MICROSOFT.XLOOKUP(7;[Shipping.B1:.F1];[Shipping.B2:.F2];;-1)",
+       "ref": "C20",
+       "odf": "COM.MICROSOFT.XLOOKUP(7;[Shipping.B1:.F1];[Shipping.B2:.F2];;-1)",
+       "excel": "COM.MICROSOFT.XLOOKUP(7,Shipping!B1:F1,Shipping!B2:F2,,-1)"
+      },
+      {
+       "kind": "string",
+       "value": "Zone A's rate for 7 kg: the band below",
+       "shown": "Zone A's rate for 7 kg: the band below",
+       "ref": "D20"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.XMATCH",
+       "shown": "COM.MICROSOFT.XMATCH",
+       "ref": "A21"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.XMATCH(\"P-30\";Prices.A2:A6)",
+       "shown": "=COM.MICROSOFT.XMATCH(\"P-30\";Prices.A2:A6)",
+       "ref": "B21"
+      },
+      {
+       "kind": "float",
+       "value": "5",
+       "shown": "5",
+       "formula": "=COM.MICROSOFT.XMATCH(\"P-30\";[Prices.A2:.A6])",
+       "ref": "C21",
+       "odf": "COM.MICROSOFT.XMATCH(\"P-30\";[Prices.A2:.A6])",
+       "excel": "COM.MICROSOFT.XMATCH(\"P-30\",Prices!A2:A6)"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's XMATCH: where the wall anchors are",
+       "shown": "Excel's XMATCH: where the wall anchors are",
+       "ref": "D21"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.XMATCH",
+       "shown": "COM.MICROSOFT.XMATCH",
+       "ref": "A22"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.XMATCH(\"Oak*\";Prices.B2:B6;2;-1)",
+       "shown": "=COM.MICROSOFT.XMATCH(\"Oak*\";Prices.B2:B6;2;-1)",
+       "ref": "B22"
+      },
+      {
+       "kind": "float",
+       "value": "2",
+       "shown": "2",
+       "formula": "=COM.MICROSOFT.XMATCH(\"Oak*\";[Prices.B2:.B6];2;-1)",
+       "ref": "C22",
+       "odf": "COM.MICROSOFT.XMATCH(\"Oak*\";[Prices.B2:.B6];2;-1)",
+       "excel": "COM.MICROSOFT.XMATCH(\"Oak*\",Prices!B2:B6,2,-1)"
+      },
+      {
+       "kind": "string",
+       "value": "The last oak product, by wildcard",
+       "shown": "The last oak product, by wildcard",
+       "ref": "D22"
       }
      ]
     }
@@ -10136,6 +10715,56 @@
      "kind": "float",
      "value": "61.5",
      "shown": "61.5"
+    },
+    {
+     "function": "COM.MICROSOFT.XLOOKUP",
+     "formula": "=COM.MICROSOFT.XLOOKUP(\"P-21\";[Prices.A2:.A6];[Prices.D2:.D6])",
+     "typed": "=COM.MICROSOFT.XLOOKUP(\"P-21\";Prices.A2:A6;Prices.D2:D6)",
+     "excel": "COM.MICROSOFT.XLOOKUP(\"P-21\",Prices!A2:A6,Prices!D2:D6)",
+     "what": "Excel's XLOOKUP: the brass brackets' price",
+     "kind": "float",
+     "value": "9.8",
+     "shown": "9.8"
+    },
+    {
+     "function": "COM.MICROSOFT.XLOOKUP",
+     "formula": "=COM.MICROSOFT.XLOOKUP(\"P-99\";[Prices.A2:.A6];[Prices.B2:.B6];\"not stocked\")",
+     "typed": "=COM.MICROSOFT.XLOOKUP(\"P-99\";Prices.A2:A6;Prices.B2:B6;\"not stocked\")",
+     "excel": "COM.MICROSOFT.XLOOKUP(\"P-99\",Prices!A2:A6,Prices!B2:B6,\"not stocked\")",
+     "what": "A SKU not on the list, said in words",
+     "kind": "string",
+     "value": "not stocked",
+     "shown": "not stocked"
+    },
+    {
+     "function": "COM.MICROSOFT.XLOOKUP",
+     "formula": "=COM.MICROSOFT.XLOOKUP(7;[Shipping.B1:.F1];[Shipping.B2:.F2];;-1)",
+     "typed": "=COM.MICROSOFT.XLOOKUP(7;Shipping.B1:F1;Shipping.B2:F2;;-1)",
+     "excel": "COM.MICROSOFT.XLOOKUP(7,Shipping!B1:F1,Shipping!B2:F2,,-1)",
+     "what": "Zone A's rate for 7 kg: the band below",
+     "kind": "float",
+     "value": "9.9",
+     "shown": "9.9"
+    },
+    {
+     "function": "COM.MICROSOFT.XMATCH",
+     "formula": "=COM.MICROSOFT.XMATCH(\"P-30\";[Prices.A2:.A6])",
+     "typed": "=COM.MICROSOFT.XMATCH(\"P-30\";Prices.A2:A6)",
+     "excel": "COM.MICROSOFT.XMATCH(\"P-30\",Prices!A2:A6)",
+     "what": "Excel's XMATCH: where the wall anchors are",
+     "kind": "float",
+     "value": "5",
+     "shown": "5"
+    },
+    {
+     "function": "COM.MICROSOFT.XMATCH",
+     "formula": "=COM.MICROSOFT.XMATCH(\"Oak*\";[Prices.B2:.B6];2;-1)",
+     "typed": "=COM.MICROSOFT.XMATCH(\"Oak*\";Prices.B2:B6;2;-1)",
+     "excel": "COM.MICROSOFT.XMATCH(\"Oak*\",Prices!B2:B6,2,-1)",
+     "what": "The last oak product, by wildcard",
+     "kind": "float",
+     "value": "2",
+     "shown": "2"
     }
    ]
   },

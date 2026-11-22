@@ -279,6 +279,10 @@ STATISTICAL = Category(
          "The bell curve's height at its middle"),
         ("COM.MICROSOFT.GAMMA.DIST", "=COM.MICROSOFT.GAMMA.DIST(30;4;5;TRUE())",
          "Excel's GAMMA.DIST: the chance homework takes at most 30 minutes, if times follow shape 4, scale 5"),
+        ("COM.MICROSOFT.STDEV.S", "=COM.MICROSOFT.STDEV.S([Marks.C2:.C11])", "Excel's STDEV.S: STDEV by its new name"),
+        ("COM.MICROSOFT.STDEV.P", "=COM.MICROSOFT.STDEV.P([Marks.C2:.C11])", "Excel's STDEV.P: STDEVP by its new name"),
+        ("COM.MICROSOFT.VAR.S", "=COM.MICROSOFT.VAR.S([Marks.E2:.E11])", "Excel's VAR.S: VAR by its new name"),
+        ("COM.MICROSOFT.VAR.P", "=COM.MICROSOFT.VAR.P([Marks.E2:.E11])", "Excel's VAR.P: VARP by its new name"),
     ],
 )
 
@@ -310,6 +314,13 @@ LOGICAL = Category(
         ("IFERROR", '=IFERROR([Orders.C6]/[Orders.H6];"no items")', "SO-1045 has no items, so a note instead of #DIV/0!"),
         ("IFNA", '=IFNA(VLOOKUP("SO-1050";[Orders.A2:.C6];3;FALSE());"not on file")', "An order number that does not exist"),
         ("IFNA", '=IFNA(MATCH("Quayside Gym";[Orders.B2:.B6];0);0)', "Where Quayside Gym's order is in the list"),
+        ("COM.MICROSOFT.IFS", '=COM.MICROSOFT.IFS([Orders.C3]>2000;"large";[Orders.C3]>500;"medium";TRUE();"small")',
+         "Excel's IFS: SO-1042's size band, without nesting IFs"),
+        ("COM.MICROSOFT.IFS", '=COM.MICROSOFT.IFS([Orders.C6]>0;"charge")', "No condition holds for a free order: #N/A"),
+        ("COM.MICROSOFT.SWITCH", '=COM.MICROSOFT.SWITCH([Orders.G3];TRUE();"Courier";FALSE();"Post")',
+         "Excel's SWITCH: SO-1042's carrier by its express flag"),
+        ("COM.MICROSOFT.SWITCH", '=COM.MICROSOFT.SWITCH([Orders.B4];"Harbor Café";"regular";"new")',
+         "A customer not named is the default"),
     ],
 )
 
@@ -402,6 +413,13 @@ TEXT = Category(
         ("T", "=T([Customers.F4])", "A postcode is text, so T keeps it"),
         ("T", "=T([Customers.H2])", "A year is a number, so T gives nothing"),
         ("HYPERLINK", '=HYPERLINK("mailto:"&[Customers.C4];[Customers.B4])', "A link that writes to Aiko"),
+        ("COM.MICROSOFT.CONCAT", '=COM.MICROSOFT.CONCAT([Customers.E3];" ";[Customers.F3])',
+         "Excel's CONCAT: Tom's city and postcode"),
+        ("COM.MICROSOFT.CONCAT", "=COM.MICROSOFT.CONCAT([Customers.A2:.A5])", "Every ID run together, a range at once"),
+        ("COM.MICROSOFT.TEXTJOIN", '=COM.MICROSOFT.TEXTJOIN(", ";TRUE();[Customers.E2:.E5])',
+         "Excel's TEXTJOIN: the cities as a list"),
+        ("COM.MICROSOFT.TEXTJOIN", '=COM.MICROSOFT.TEXTJOIN("/";FALSE();[Customers.A2];"";[Customers.A3])',
+         "Empty pieces kept when told to"),
         ("FIXED", '="Order total: "&FIXED(1234.5;2)', "An amount spelled with its separators inside a sentence"),
         ("FIXED", "=FIXED([Customers.H2];0;TRUE())", "A year as text, with no thousands separator"),
     ],
@@ -497,6 +515,14 @@ LOOKUP = Category(
         ("OFFSET", '=OFFSET([Prices.A1];MATCH("P-30";[Prices.A2:.A6];0);3)', "The wall anchors' price, reached by moving"),
         ("INDIRECT", '=INDIRECT("Prices.D"&(MATCH("P-11";[Prices.A2:.A6];0)+1))', "A price at an address built as text"),
         ("INDIRECT", '=SUM(INDIRECT("Shipping!B2:F2"))', "Zone A's rates, named in Excel's spelling"),
+        ("COM.MICROSOFT.XLOOKUP", '=COM.MICROSOFT.XLOOKUP("P-21";[Prices.A2:.A6];[Prices.D2:.D6])',
+         "Excel's XLOOKUP: the brass brackets' price"),
+        ("COM.MICROSOFT.XLOOKUP", '=COM.MICROSOFT.XLOOKUP("P-99";[Prices.A2:.A6];[Prices.B2:.B6];"not stocked")',
+         "A SKU not on the list, said in words"),
+        ("COM.MICROSOFT.XLOOKUP", "=COM.MICROSOFT.XLOOKUP(7;[Shipping.B1:.F1];[Shipping.B2:.F2];;-1)",
+         "Zone A's rate for 7 kg: the band below"),
+        ("COM.MICROSOFT.XMATCH", '=COM.MICROSOFT.XMATCH("P-30";[Prices.A2:.A6])', "Excel's XMATCH: where the wall anchors are"),
+        ("COM.MICROSOFT.XMATCH", '=COM.MICROSOFT.XMATCH("Oak*";[Prices.B2:.B6];2;-1)', "The last oak product, by wildcard"),
     ],
 )
 
