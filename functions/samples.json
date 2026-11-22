@@ -9864,6 +9864,114 @@
        "value": "The same kind of address, relative",
        "shown": "The same kind of address, relative",
        "ref": "D13"
+      },
+      {
+       "kind": "string",
+       "value": "OFFSET",
+       "shown": "OFFSET",
+       "ref": "A14"
+      },
+      {
+       "kind": "string",
+       "value": "=SUM(OFFSET(Prices.D1;1;0;3))",
+       "shown": "=SUM(OFFSET(Prices.D1;1;0;3))",
+       "ref": "B14"
+      },
+      {
+       "kind": "float",
+       "value": "91.3",
+       "shown": "91.3",
+       "formula": "=SUM(OFFSET([Prices.D1];1;0;3))",
+       "ref": "C14",
+       "odf": "SUM(OFFSET([Prices.D1];1;0;3))",
+       "excel": "SUM(OFFSET(Prices!D1,1,0,3))"
+      },
+      {
+       "kind": "string",
+       "value": "The first three prices, counted down from the heading",
+       "shown": "The first three prices, counted down from the heading",
+       "ref": "D14"
+      },
+      {
+       "kind": "string",
+       "value": "OFFSET",
+       "shown": "OFFSET",
+       "ref": "A15"
+      },
+      {
+       "kind": "string",
+       "value": "=OFFSET(Prices.A1;MATCH(\"P-30\";Prices.A2:A6;0);3)",
+       "shown": "=OFFSET(Prices.A1;MATCH(\"P-30\";Prices.A2:A6;0);3)",
+       "ref": "B15"
+      },
+      {
+       "kind": "float",
+       "value": "3.2",
+       "shown": "3.2",
+       "formula": "=OFFSET([Prices.A1];MATCH(\"P-30\";[Prices.A2:.A6];0);3)",
+       "ref": "C15",
+       "odf": "OFFSET([Prices.A1];MATCH(\"P-30\";[Prices.A2:.A6];0);3)",
+       "excel": "OFFSET(Prices!A1,MATCH(\"P-30\",Prices!A2:A6,0),3)"
+      },
+      {
+       "kind": "string",
+       "value": "The wall anchors' price, reached by moving",
+       "shown": "The wall anchors' price, reached by moving",
+       "ref": "D15"
+      },
+      {
+       "kind": "string",
+       "value": "INDIRECT",
+       "shown": "INDIRECT",
+       "ref": "A16"
+      },
+      {
+       "kind": "string",
+       "value": "=INDIRECT(\"Prices.D\"&(MATCH(\"P-11\";Prices.A2:A6;0)+1))",
+       "shown": "=INDIRECT(\"Prices.D\"&(MATCH(\"P-11\";Prices.A2:A6;0)+1))",
+       "ref": "B16"
+      },
+      {
+       "kind": "float",
+       "value": "49.9",
+       "shown": "49.9",
+       "formula": "=INDIRECT(\"Prices.D\"&(MATCH(\"P-11\";[Prices.A2:.A6];0)+1))",
+       "ref": "C16",
+       "odf": "INDIRECT(\"Prices.D\"&(MATCH(\"P-11\";[Prices.A2:.A6];0)+1))",
+       "excel": "INDIRECT(\"Prices.D\"&(MATCH(\"P-11\",Prices!A2:A6,0)+1))"
+      },
+      {
+       "kind": "string",
+       "value": "A price at an address built as text",
+       "shown": "A price at an address built as text",
+       "ref": "D16"
+      },
+      {
+       "kind": "string",
+       "value": "INDIRECT",
+       "shown": "INDIRECT",
+       "ref": "A17"
+      },
+      {
+       "kind": "string",
+       "value": "=SUM(INDIRECT(\"Shipping!B2:F2\"))",
+       "shown": "=SUM(INDIRECT(\"Shipping!B2:F2\"))",
+       "ref": "B17"
+      },
+      {
+       "kind": "float",
+       "value": "61.5",
+       "shown": "61.5",
+       "formula": "=SUM(INDIRECT(\"Shipping!B2:F2\"))",
+       "ref": "C17",
+       "odf": "SUM(INDIRECT(\"Shipping!B2:F2\"))",
+       "excel": "SUM(INDIRECT(\"Shipping!B2:F2\"))"
+      },
+      {
+       "kind": "string",
+       "value": "Zone A's rates, named in Excel's spelling",
+       "shown": "Zone A's rates, named in Excel's spelling",
+       "ref": "D17"
       }
      ]
     }
@@ -9988,6 +10096,46 @@
      "kind": "string",
      "value": "D2",
      "shown": "D2"
+    },
+    {
+     "function": "OFFSET",
+     "formula": "=SUM(OFFSET([Prices.D1];1;0;3))",
+     "typed": "=SUM(OFFSET(Prices.D1;1;0;3))",
+     "excel": "SUM(OFFSET(Prices!D1,1,0,3))",
+     "what": "The first three prices, counted down from the heading",
+     "kind": "float",
+     "value": "91.3",
+     "shown": "91.3"
+    },
+    {
+     "function": "OFFSET",
+     "formula": "=OFFSET([Prices.A1];MATCH(\"P-30\";[Prices.A2:.A6];0);3)",
+     "typed": "=OFFSET(Prices.A1;MATCH(\"P-30\";Prices.A2:A6;0);3)",
+     "excel": "OFFSET(Prices!A1,MATCH(\"P-30\",Prices!A2:A6,0),3)",
+     "what": "The wall anchors' price, reached by moving",
+     "kind": "float",
+     "value": "3.2",
+     "shown": "3.2"
+    },
+    {
+     "function": "INDIRECT",
+     "formula": "=INDIRECT(\"Prices.D\"&(MATCH(\"P-11\";[Prices.A2:.A6];0)+1))",
+     "typed": "=INDIRECT(\"Prices.D\"&(MATCH(\"P-11\";Prices.A2:A6;0)+1))",
+     "excel": "INDIRECT(\"Prices.D\"&(MATCH(\"P-11\",Prices!A2:A6,0)+1))",
+     "what": "A price at an address built as text",
+     "kind": "float",
+     "value": "49.9",
+     "shown": "49.9"
+    },
+    {
+     "function": "INDIRECT",
+     "formula": "=SUM(INDIRECT(\"Shipping!B2:F2\"))",
+     "typed": "=SUM(INDIRECT(\"Shipping!B2:F2\"))",
+     "excel": "SUM(INDIRECT(\"Shipping!B2:F2\"))",
+     "what": "Zone A's rates, named in Excel's spelling",
+     "kind": "float",
+     "value": "61.5",
+     "shown": "61.5"
     }
    ]
   },

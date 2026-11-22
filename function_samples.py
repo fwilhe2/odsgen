@@ -493,6 +493,10 @@ LOOKUP = Category(
         ("CHOOSE", '=CHOOSE(2;"Standard";"Express";"Pick-up")', "The second delivery option"),
         ("ADDRESS", '=ADDRESS(MATCH("P-20";[Prices.A2:.A6];0)+1;4)', "The cell holding the black brackets' price"),
         ("ADDRESS", "=ADDRESS(2;4;4)", "The same kind of address, relative"),
+        ("OFFSET", "=SUM(OFFSET([Prices.D1];1;0;3))", "The first three prices, counted down from the heading"),
+        ("OFFSET", '=OFFSET([Prices.A1];MATCH("P-30";[Prices.A2:.A6];0);3)', "The wall anchors' price, reached by moving"),
+        ("INDIRECT", '=INDIRECT("Prices.D"&(MATCH("P-11";[Prices.A2:.A6];0)+1))', "A price at an address built as text"),
+        ("INDIRECT", '=SUM(INDIRECT("Shipping!B2:F2"))', "Zone A's rates, named in Excel's spelling"),
     ],
 )
 
