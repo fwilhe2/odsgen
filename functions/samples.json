@@ -8591,22 +8591,76 @@
       },
       {
        "kind": "string",
+       "value": "TEXT",
+       "shown": "TEXT",
+       "ref": "A32"
+      },
+      {
+       "kind": "string",
+       "value": "=\"Customer since \"&TEXT(DATE(Customers.H3;3;1);\"mmmm yyyy\")",
+       "shown": "=\"Customer since \"&TEXT(DATE(Customers.H3;3;1);\"mmmm yyyy\")",
+       "ref": "B32"
+      },
+      {
+       "kind": "string",
+       "value": "Customer since March 2021",
+       "shown": "Customer since March 2021",
+       "formula": "=\"Customer since \"&TEXT(DATE([Customers.H3];3;1);\"mmmm yyyy\")",
+       "ref": "C32",
+       "odf": "\"Customer since \"&TEXT(DATE([Customers.H3];3;1);\"mmmm yyyy\")",
+       "excel": "\"Customer since \"&TEXT(DATE(Customers!H3,3,1),\"mmmm yyyy\")"
+      },
+      {
+       "kind": "string",
+       "value": "A date put into a sentence",
+       "shown": "A date put into a sentence",
+       "ref": "D32"
+      },
+      {
+       "kind": "string",
+       "value": "TEXT",
+       "shown": "TEXT",
+       "ref": "A33"
+      },
+      {
+       "kind": "string",
+       "value": "=TEXT(Customers.H5*1.5;\"#,##0.00\")",
+       "shown": "=TEXT(Customers.H5*1.5;\"#,##0.00\")",
+       "ref": "B33"
+      },
+      {
+       "kind": "string",
+       "value": "3,027.00",
+       "shown": "3,027.00",
+       "formula": "=TEXT([Customers.H5]*1.5;\"#,##0.00\")",
+       "ref": "C33",
+       "odf": "TEXT([Customers.H5]*1.5;\"#,##0.00\")",
+       "excel": "TEXT(Customers!H5*1.5,\"#,##0.00\")"
+      },
+      {
+       "kind": "string",
+       "value": "A number spelled with separators and two decimals",
+       "shown": "A number spelled with separators and two decimals",
+       "ref": "D33"
+      },
+      {
+       "kind": "string",
        "value": "FIXED",
        "shown": "FIXED",
-       "ref": "A32"
+       "ref": "A34"
       },
       {
        "kind": "string",
        "value": "=\"Order total: \"&FIXED(1234.5;2)",
        "shown": "=\"Order total: \"&FIXED(1234.5;2)",
-       "ref": "B32"
+       "ref": "B34"
       },
       {
        "kind": "string",
        "value": "Order total: 1,234.50",
        "shown": "Order total: 1,234.50",
        "formula": "=\"Order total: \"&FIXED(1234.5;2)",
-       "ref": "C32",
+       "ref": "C34",
        "odf": "\"Order total: \"&FIXED(1234.5;2)",
        "excel": "\"Order total: \"&FIXED(1234.5,2)"
       },
@@ -8614,26 +8668,26 @@
        "kind": "string",
        "value": "An amount spelled with its separators inside a sentence",
        "shown": "An amount spelled with its separators inside a sentence",
-       "ref": "D32"
+       "ref": "D34"
       },
       {
        "kind": "string",
        "value": "FIXED",
        "shown": "FIXED",
-       "ref": "A33"
+       "ref": "A35"
       },
       {
        "kind": "string",
        "value": "=FIXED(Customers.H2;0;TRUE())",
        "shown": "=FIXED(Customers.H2;0;TRUE())",
-       "ref": "B33"
+       "ref": "B35"
       },
       {
        "kind": "string",
        "value": "2019",
        "shown": "2019",
        "formula": "=FIXED([Customers.H2];0;TRUE())",
-       "ref": "C33",
+       "ref": "C35",
        "odf": "FIXED([Customers.H2];0;TRUE())",
        "excel": "FIXED(Customers!H2,0,TRUE)"
       },
@@ -8641,7 +8695,7 @@
        "kind": "string",
        "value": "A year as text, with no thousands separator",
        "shown": "A year as text, with no thousands separator",
-       "ref": "D33"
+       "ref": "D35"
       }
      ]
     }
@@ -8946,6 +9000,26 @@
      "kind": "float",
      "value": "84",
      "shown": "84"
+    },
+    {
+     "function": "TEXT",
+     "formula": "=\"Customer since \"&TEXT(DATE([Customers.H3];3;1);\"mmmm yyyy\")",
+     "typed": "=\"Customer since \"&TEXT(DATE(Customers.H3;3;1);\"mmmm yyyy\")",
+     "excel": "\"Customer since \"&TEXT(DATE(Customers!H3,3,1),\"mmmm yyyy\")",
+     "what": "A date put into a sentence",
+     "kind": "string",
+     "value": "Customer since March 2021",
+     "shown": "Customer since March 2021"
+    },
+    {
+     "function": "TEXT",
+     "formula": "=TEXT([Customers.H5]*1.5;\"#,##0.00\")",
+     "typed": "=TEXT(Customers.H5*1.5;\"#,##0.00\")",
+     "excel": "TEXT(Customers!H5*1.5,\"#,##0.00\")",
+     "what": "A number spelled with separators and two decimals",
+     "kind": "string",
+     "value": "3,027.00",
+     "shown": "3,027.00"
     },
     {
      "function": "FIXED",
