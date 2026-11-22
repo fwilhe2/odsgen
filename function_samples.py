@@ -269,6 +269,16 @@ STATISTICAL = Category(
         ("STDEVP", "=STDEVP([Marks.C2:.C11])", "The same, treating the classes as the whole population"),
         ("VAR", "=VAR([Marks.E2:.E11])", "Variance of the science marks, as a sample"),
         ("VARP", "=VARP([Marks.E2:.E11])", "The same, as a population"),
+        ("LEGACY.NORMSINV",
+         "=AVERAGE([Marks.C2:.C11])+LEGACY.NORMSINV(0.9)*STDEV([Marks.C2:.C11])",
+         "The maths mark the top tenth would reach if marks were normally distributed"),
+        ("COM.MICROSOFT.NORM.S.DIST",
+         "=COM.MICROSOFT.NORM.S.DIST(([Marks.C4]-AVERAGE([Marks.C2:.C11]))/STDEV([Marks.C2:.C11]);TRUE())",
+         "Excel's NORM.S.DIST: the share of a normal class below Chloe's maths mark"),
+        ("COM.MICROSOFT.NORM.S.DIST", "=COM.MICROSOFT.NORM.S.DIST(0;FALSE())",
+         "The bell curve's height at its middle"),
+        ("COM.MICROSOFT.GAMMA.DIST", "=COM.MICROSOFT.GAMMA.DIST(30;4;5;TRUE())",
+         "Excel's GAMMA.DIST: the chance homework takes at most 30 minutes, if times follow shape 4, scale 5"),
     ],
 )
 
@@ -392,6 +402,8 @@ TEXT = Category(
         ("T", "=T([Customers.F4])", "A postcode is text, so T keeps it"),
         ("T", "=T([Customers.H2])", "A year is a number, so T gives nothing"),
         ("HYPERLINK", '=HYPERLINK("mailto:"&[Customers.C4];[Customers.B4])', "A link that writes to Aiko"),
+        ("FIXED", '="Order total: "&FIXED(1234.5;2)', "An amount spelled with its separators inside a sentence"),
+        ("FIXED", "=FIXED([Customers.H2];0;TRUE())", "A year as text, with no thousands separator"),
     ],
 )
 

@@ -4427,6 +4427,114 @@
        "value": "The same, as a population",
        "shown": "The same, as a population",
        "ref": "D21"
+      },
+      {
+       "kind": "string",
+       "value": "LEGACY.NORMSINV",
+       "shown": "LEGACY.NORMSINV",
+       "ref": "A22"
+      },
+      {
+       "kind": "string",
+       "value": "=AVERAGE(Marks.C2:C11)+LEGACY.NORMSINV(0.9)*STDEV(Marks.C2:C11)",
+       "shown": "=AVERAGE(Marks.C2:C11)+LEGACY.NORMSINV(0.9)*STDEV(Marks.C2:C11)",
+       "ref": "B22"
+      },
+      {
+       "kind": "float",
+       "value": "94.4823463344024",
+       "shown": "94.4823463344024",
+       "formula": "=AVERAGE([Marks.C2:.C11])+LEGACY.NORMSINV(0.9)*STDEV([Marks.C2:.C11])",
+       "ref": "C22",
+       "odf": "AVERAGE([Marks.C2:.C11])+LEGACY.NORMSINV(0.9)*STDEV([Marks.C2:.C11])",
+       "excel": "AVERAGE(Marks!C2:C11)+LEGACY.NORMSINV(0.9)*STDEV(Marks!C2:C11)"
+      },
+      {
+       "kind": "string",
+       "value": "The maths mark the top tenth would reach if marks were normally distributed",
+       "shown": "The maths mark the top tenth would reach if marks were normally distributed",
+       "ref": "D22"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.NORM.S.DIST",
+       "shown": "COM.MICROSOFT.NORM.S.DIST",
+       "ref": "A23"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.NORM.S.DIST((Marks.C4-AVERAGE(Marks.C2:C11))/STDEV(Marks.C2:C11);TRUE())",
+       "shown": "=COM.MICROSOFT.NORM.S.DIST((Marks.C4-AVERAGE(Marks.C2:C11))/STDEV(Marks.C2:C11);TRUE())",
+       "ref": "B23"
+      },
+      {
+       "kind": "float",
+       "value": "0.855524877377216",
+       "shown": "0.855524877377216",
+       "formula": "=COM.MICROSOFT.NORM.S.DIST(([Marks.C4]-AVERAGE([Marks.C2:.C11]))/STDEV([Marks.C2:.C11]);TRUE())",
+       "ref": "C23",
+       "odf": "COM.MICROSOFT.NORM.S.DIST(([Marks.C4]-AVERAGE([Marks.C2:.C11]))/STDEV([Marks.C2:.C11]);TRUE())",
+       "excel": "COM.MICROSOFT.NORM.S.DIST((Marks!C4-AVERAGE(Marks!C2:C11))/STDEV(Marks!C2:C11),TRUE)"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's NORM.S.DIST: the share of a normal class below Chloe's maths mark",
+       "shown": "Excel's NORM.S.DIST: the share of a normal class below Chloe's maths mark",
+       "ref": "D23"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.NORM.S.DIST",
+       "shown": "COM.MICROSOFT.NORM.S.DIST",
+       "ref": "A24"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.NORM.S.DIST(0;FALSE())",
+       "shown": "=COM.MICROSOFT.NORM.S.DIST(0;FALSE())",
+       "ref": "B24"
+      },
+      {
+       "kind": "float",
+       "value": "0.398942280401433",
+       "shown": "0.398942280401433",
+       "formula": "=COM.MICROSOFT.NORM.S.DIST(0;FALSE())",
+       "ref": "C24",
+       "odf": "COM.MICROSOFT.NORM.S.DIST(0;FALSE())",
+       "excel": "COM.MICROSOFT.NORM.S.DIST(0,FALSE)"
+      },
+      {
+       "kind": "string",
+       "value": "The bell curve's height at its middle",
+       "shown": "The bell curve's height at its middle",
+       "ref": "D24"
+      },
+      {
+       "kind": "string",
+       "value": "COM.MICROSOFT.GAMMA.DIST",
+       "shown": "COM.MICROSOFT.GAMMA.DIST",
+       "ref": "A25"
+      },
+      {
+       "kind": "string",
+       "value": "=COM.MICROSOFT.GAMMA.DIST(30;4;5;TRUE())",
+       "shown": "=COM.MICROSOFT.GAMMA.DIST(30;4;5;TRUE())",
+       "ref": "B25"
+      },
+      {
+       "kind": "float",
+       "value": "0.848796117223352",
+       "shown": "0.848796117223352",
+       "formula": "=COM.MICROSOFT.GAMMA.DIST(30;4;5;TRUE())",
+       "ref": "C25",
+       "odf": "COM.MICROSOFT.GAMMA.DIST(30;4;5;TRUE())",
+       "excel": "COM.MICROSOFT.GAMMA.DIST(30,4,5,TRUE)"
+      },
+      {
+       "kind": "string",
+       "value": "Excel's GAMMA.DIST: the chance homework takes at most 30 minutes, if times follow shape 4, scale 5",
+       "shown": "Excel's GAMMA.DIST: the chance homework takes at most 30 minutes, if times follow shape 4, scale 5",
+       "ref": "D25"
       }
      ]
     }
@@ -4631,6 +4739,46 @@
      "kind": "float",
      "value": "195.96",
      "shown": "195.96"
+    },
+    {
+     "function": "LEGACY.NORMSINV",
+     "formula": "=AVERAGE([Marks.C2:.C11])+LEGACY.NORMSINV(0.9)*STDEV([Marks.C2:.C11])",
+     "typed": "=AVERAGE(Marks.C2:C11)+LEGACY.NORMSINV(0.9)*STDEV(Marks.C2:C11)",
+     "excel": "AVERAGE(Marks!C2:C11)+LEGACY.NORMSINV(0.9)*STDEV(Marks!C2:C11)",
+     "what": "The maths mark the top tenth would reach if marks were normally distributed",
+     "kind": "float",
+     "value": "94.4823463344024",
+     "shown": "94.4823463344024"
+    },
+    {
+     "function": "COM.MICROSOFT.NORM.S.DIST",
+     "formula": "=COM.MICROSOFT.NORM.S.DIST(([Marks.C4]-AVERAGE([Marks.C2:.C11]))/STDEV([Marks.C2:.C11]);TRUE())",
+     "typed": "=COM.MICROSOFT.NORM.S.DIST((Marks.C4-AVERAGE(Marks.C2:C11))/STDEV(Marks.C2:C11);TRUE())",
+     "excel": "COM.MICROSOFT.NORM.S.DIST((Marks!C4-AVERAGE(Marks!C2:C11))/STDEV(Marks!C2:C11),TRUE)",
+     "what": "Excel's NORM.S.DIST: the share of a normal class below Chloe's maths mark",
+     "kind": "float",
+     "value": "0.855524877377216",
+     "shown": "0.855524877377216"
+    },
+    {
+     "function": "COM.MICROSOFT.NORM.S.DIST",
+     "formula": "=COM.MICROSOFT.NORM.S.DIST(0;FALSE())",
+     "typed": "=COM.MICROSOFT.NORM.S.DIST(0;FALSE())",
+     "excel": "COM.MICROSOFT.NORM.S.DIST(0,FALSE)",
+     "what": "The bell curve's height at its middle",
+     "kind": "float",
+     "value": "0.398942280401433",
+     "shown": "0.398942280401433"
+    },
+    {
+     "function": "COM.MICROSOFT.GAMMA.DIST",
+     "formula": "=COM.MICROSOFT.GAMMA.DIST(30;4;5;TRUE())",
+     "typed": "=COM.MICROSOFT.GAMMA.DIST(30;4;5;TRUE())",
+     "excel": "COM.MICROSOFT.GAMMA.DIST(30,4,5,TRUE)",
+     "what": "Excel's GAMMA.DIST: the chance homework takes at most 30 minutes, if times follow shape 4, scale 5",
+     "kind": "float",
+     "value": "0.848796117223352",
+     "shown": "0.848796117223352"
     }
    ]
   },
@@ -7632,6 +7780,60 @@
        "value": "A link that writes to Aiko",
        "shown": "A link that writes to Aiko",
        "ref": "D23"
+      },
+      {
+       "kind": "string",
+       "value": "FIXED",
+       "shown": "FIXED",
+       "ref": "A24"
+      },
+      {
+       "kind": "string",
+       "value": "=\"Order total: \"&FIXED(1234.5;2)",
+       "shown": "=\"Order total: \"&FIXED(1234.5;2)",
+       "ref": "B24"
+      },
+      {
+       "kind": "string",
+       "value": "Order total: 1,234.50",
+       "shown": "Order total: 1,234.50",
+       "formula": "=\"Order total: \"&FIXED(1234.5;2)",
+       "ref": "C24",
+       "odf": "\"Order total: \"&FIXED(1234.5;2)",
+       "excel": "\"Order total: \"&FIXED(1234.5,2)"
+      },
+      {
+       "kind": "string",
+       "value": "An amount spelled with its separators inside a sentence",
+       "shown": "An amount spelled with its separators inside a sentence",
+       "ref": "D24"
+      },
+      {
+       "kind": "string",
+       "value": "FIXED",
+       "shown": "FIXED",
+       "ref": "A25"
+      },
+      {
+       "kind": "string",
+       "value": "=FIXED(Customers.H2;0;TRUE())",
+       "shown": "=FIXED(Customers.H2;0;TRUE())",
+       "ref": "B25"
+      },
+      {
+       "kind": "string",
+       "value": "2019",
+       "shown": "2019",
+       "formula": "=FIXED([Customers.H2];0;TRUE())",
+       "ref": "C25",
+       "odf": "FIXED([Customers.H2];0;TRUE())",
+       "excel": "FIXED(Customers!H2,0,TRUE)"
+      },
+      {
+       "kind": "string",
+       "value": "A year as text, with no thousands separator",
+       "shown": "A year as text, with no thousands separator",
+       "ref": "D25"
       }
      ]
     }
@@ -7856,6 +8058,26 @@
      "kind": "string",
      "value": "Aiko Tanaka",
      "shown": "Aiko Tanaka"
+    },
+    {
+     "function": "FIXED",
+     "formula": "=\"Order total: \"&FIXED(1234.5;2)",
+     "typed": "=\"Order total: \"&FIXED(1234.5;2)",
+     "excel": "\"Order total: \"&FIXED(1234.5,2)",
+     "what": "An amount spelled with its separators inside a sentence",
+     "kind": "string",
+     "value": "Order total: 1,234.50",
+     "shown": "Order total: 1,234.50"
+    },
+    {
+     "function": "FIXED",
+     "formula": "=FIXED([Customers.H2];0;TRUE())",
+     "typed": "=FIXED(Customers.H2;0;TRUE())",
+     "excel": "FIXED(Customers!H2,0,TRUE)",
+     "what": "A year as text, with no thousands separator",
+     "kind": "string",
+     "value": "2019",
+     "shown": "2019"
     }
    ]
   },
