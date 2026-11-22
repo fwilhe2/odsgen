@@ -368,6 +368,14 @@ INFORMATION = Category(
         ("ROWS", "=ROWS([Stock.A2:.A8])", "SKUs on the list"),
         ("COLUMN", "=COLUMN([Stock.E1])", "Supplier is the fifth column"),
         ("COLUMNS", "=COLUMNS([Stock.A1:.I1])", "Fields kept per item"),
+        ("ISEVEN", "=ISEVEN([Stock.D3])", "Hex nuts reorder at an even number, so a pair of boxes fits"),
+        ("ISODD", "=ISODD([Stock.C8])", "Heat-shrink's count is not odd"),
+        ("ISREF", "=ISREF([Stock.C2])", "A cell is a reference"),
+        ("ISREF", "=ISREF(5)", "…a number is not"),
+        ("ISFORMULA", "=ISFORMULA([Stock.I2])", "Weeks of cover is worked out, not typed"),
+        ("FORMULA", "=FORMULA([Stock.I2])", "…and this is how"),
+        ("ERROR.TYPE", "=ERROR.TYPE([Stock.I7])", "Cable ties have no weekly use: a division by zero is error 2"),
+        ("ERROR.TYPE", '=ERROR.TYPE(MATCH("D-400";[Stock.A2:.A8];0))', "An unstocked SKU: #N/A is error 7"),
     ],
 )
 
@@ -420,6 +428,10 @@ TEXT = Category(
          "Excel's TEXTJOIN: the cities as a list"),
         ("COM.MICROSOFT.TEXTJOIN", '=COM.MICROSOFT.TEXTJOIN("/";FALSE();[Customers.A2];"";[Customers.A3])',
          "Empty pieces kept when told to"),
+        ("CHAR", '=LEFT([Customers.B3];3)&CHAR(45)&RIGHT([Customers.A3];2)', "A short code joined by CHAR(45), a hyphen"),
+        ("CODE", "=CODE([Customers.E3])", "London begins with code 76, an L"),
+        ("UNICHAR", '="Price: "&UNICHAR(8364)&"5"', "The euro sign by its code point"),
+        ("UNICODE", "=UNICODE([Customers.E4])", "Tokyo's T is code point 84"),
         ("FIXED", '="Order total: "&FIXED(1234.5;2)', "An amount spelled with its separators inside a sentence"),
         ("FIXED", "=FIXED([Customers.H2];0;TRUE())", "A year as text, with no thousands separator"),
     ],
@@ -523,6 +535,8 @@ LOOKUP = Category(
          "Zone A's rate for 7 kg: the band below"),
         ("COM.MICROSOFT.XMATCH", '=COM.MICROSOFT.XMATCH("P-30";[Prices.A2:.A6])', "Excel's XMATCH: where the wall anchors are"),
         ("COM.MICROSOFT.XMATCH", '=COM.MICROSOFT.XMATCH("Oak*";[Prices.B2:.B6];2;-1)', "The last oak product, by wildcard"),
+        ("LOOKUP", "=LOOKUP(7;[Shipping.B1:.F1];[Shipping.B2:.F2])", "Zone A's rate for 7 kg, from the sorted bands"),
+        ("LOOKUP", '=LOOKUP("P-21";[Prices.A2:.D6])', "The brass brackets' price, from the table's last column"),
     ],
 )
 
